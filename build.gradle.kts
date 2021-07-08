@@ -7,7 +7,7 @@ plugins {
     java
 }
 
-group = "kotlin-rest-assured-junit-5"
+group = "rest-assured-kotlin"
 version = "1.0"
 
 description = "REST API Test with Rest Assured and Kotlin"
@@ -21,6 +21,7 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.5.20-M1")
     testImplementation("io.rest-assured:rest-assured:4.4.0")
     testImplementation("io.rest-assured:kotlin-extensions:4.4.0")
+    testImplementation("io.rest-assured:json-schema-validator:4.4.0")
 }
 
 configure<JavaPluginConvention> {

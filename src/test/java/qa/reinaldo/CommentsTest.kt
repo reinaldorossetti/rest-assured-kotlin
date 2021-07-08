@@ -1,46 +1,54 @@
-@file:Suppress("ClassName")
 
 package qa.reinaldo
 
 import com.burakkaygusuz.tests.BaseTest
 import io.restassured.RestAssured.post
+import io.restassured.RestAssured.responseSpecification
 import io.restassured.module.kotlin.extensions.Extract
 import io.restassured.module.kotlin.extensions.Given
 import io.restassured.module.kotlin.extensions.Then
 import io.restassured.module.kotlin.extensions.When
+import io.restassured.response.Response
+import io.restassured.response.ValidatableResponse
 import org.apache.http.HttpStatus
-import org.hamcrest.MatcherAssert.assertThat
+import org.hamcrest.MatcherAssert.*
 import org.hamcrest.Matchers.equalTo
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
-class `Comments Test` : BaseTest() {
+class FeatureUsers : BaseTest() {
 
     @Test
-    fun `get all comments by blog Id and post Id`() {
+    fun registerUser() {
 
-        Given {
+         var response: String = Given {
             spec(requestSpecification)
-        } When {
-            post('/usuarios')
+            body(bodyUser())
+            header("Header", "Header")
+         } When {
+            post("/usuarios", )
         } Then {
-            statusCode(HttpStatus.SC_OK)
+            statusCode(HttpStatus.SC_CREATED)
+        } Extract {
+            path("message")
         }
+        assertEquals(response, "Cadastro realizado com sucesso")
     }
 
     @Test
-    fun `get single comment`() {
+    fun getAllUsers() {
 
-        val displayName: String = Given {
+        val displayName = Given {
             spec(requestSpecification)
         } When {
-            get("/blogs/2399953/posts/5310628572012276714/comments/6352433676268819946")
+            get("/usuarios")
         } Then {
             statusCode(HttpStatus.SC_OK)
         } Extract {
-            path("author.displayName")
+            body().jsonPath().prettify()
         }
-
-        assertThat(displayName, equalTo("Elizabeth Keene"))
+        print(displayName)
     }
 
 }

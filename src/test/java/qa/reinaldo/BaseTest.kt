@@ -18,6 +18,10 @@ open class BaseTest {
         lateinit var requestSpecification: RequestSpecification
     }
 
+    fun bodyUser(): String {
+        return "{ \"nome\": \"full_name\", \"email\": \"rei1@gmail.com\", \"password\": \"password\", \"administrador\": \"true\" }"
+    }
+
     @BeforeAll
     fun setUp() {
 
