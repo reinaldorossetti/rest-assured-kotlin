@@ -10,6 +10,10 @@ import io.restassured.specification.RequestSpecification
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance
+import com.fasterxml.jackson.module.kotlin.*
+import qa.reinaldo._core.dados.User
+import qa.reinaldo._core.dados.UserCreated
+import java.io.File
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 open class BaseTest {
@@ -17,10 +21,15 @@ open class BaseTest {
     companion object {
         lateinit var requestSpecification: RequestSpecification
     }
+    val mapper = jacksonObjectMapper()
+    val path = System.getProperty("user.dir")
+    var userObject: User = mapper.readValue<User>(File("$path/src/test/java/resources/user.json"))
+    var user =  UserCreated()
 
     fun bodyUser(): String {
-        return "{ \"nome\": \"full_name\", \"email\": \"rei1@gmail.com\", \"password\": \"password\", \"administrador\": \"true\" }"
+        return mapper.writeValueAsString(userObject)
     }
+
 
     @BeforeAll
     fun setUp() {
