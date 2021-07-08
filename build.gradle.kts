@@ -23,6 +23,7 @@ dependencies {
     testImplementation("io.rest-assured:kotlin-extensions:4.4.0")
     testImplementation("io.rest-assured:json-schema-validator:4.4.0")
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.8.+")
+    testImplementation("com.github.javafaker:javafaker:1.0.2")
 }
 
 configure<JavaPluginConvention> {

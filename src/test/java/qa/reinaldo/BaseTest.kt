@@ -11,6 +11,7 @@ import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance
 import com.fasterxml.jackson.module.kotlin.*
+import com.github.javafaker.Faker
 import qa.reinaldo._core.dados.User
 import qa.reinaldo._core.dados.UserCreated
 import java.io.File
@@ -27,6 +28,9 @@ open class BaseTest {
     var user =  UserCreated()
 
     fun bodyUser(): String {
+        var faker = Faker()
+        userObject.nome = faker.name().fullName()
+        userObject.email = faker.internet().emailAddress()
         return mapper.writeValueAsString(userObject)
     }
 
