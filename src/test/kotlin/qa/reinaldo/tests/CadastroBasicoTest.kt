@@ -12,6 +12,8 @@ import io.restassured.module.kotlin.extensions.When
 import io.restassured.specification.RequestSpecification
 import org.hamcrest.Matchers.equalTo
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
+import org.opentest4j.AssertionFailedError
 import qa.reinaldo._core.dados.UserData
 import java.io.File
 
@@ -56,6 +58,25 @@ class CadastroBasicoTest {
             } Then {
                 statusCode(201)
                 body("message", equalTo("Cadastro realizado com sucesso"))
+            } Extract {
+                path("message")
+            }
+        println(message)
+        step("Message: $message")
+    }
+
+    @Test
+    fun cadastroDeUsuarioMessageEmailTest(){
+        step("Realizando os testes de cadastro")
+        val message: String =
+            Given {
+                spec(requestSpecification());
+                body(cadastroDadosBody)
+            } When {
+                post("/usuarios")
+            } Then {
+                statusCode(400)
+                body("message", equalTo("Este email já está sendo usado"))
             } Extract {
                 path("message")
             }

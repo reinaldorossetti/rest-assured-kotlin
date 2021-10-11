@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: dev.serverest.tests.CadastroBasicoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.215 s <<< FAILURE! - in dev.serverest.tests.CadastroBasicoTest
-cadastroDeUsuarioTest  Time elapsed: 0.12 s  <<< ERROR!
-java.io.FileNotFoundException: C:\Users\reinaldo.junior\Documents\GitHub\rest-assured-kotlin\src\main\resources\cadastro_user.json (O sistema não pode encontrar o caminho especificado)
-	at dev.serverest.tests.CadastroBasicoTest.<init>(CadastroBasicoTest.kt:23)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.487 s - in dev.serverest.tests.CadastroBasicoTest
