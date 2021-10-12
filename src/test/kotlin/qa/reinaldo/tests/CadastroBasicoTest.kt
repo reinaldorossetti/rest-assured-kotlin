@@ -2,6 +2,7 @@ package qa.reinaldo.tests
 
 import com.github.javafaker.Faker
 import com.google.gson.Gson
+import com.google.gson.JsonElement
 import io.qameta.allure.Allure.step
 import io.restassured.builder.RequestSpecBuilder
 import io.restassured.filter.log.LogDetail
@@ -15,11 +16,16 @@ import io.restassured.module.spring.commons.config.AsyncConfig.withTimeout
 import io.restassured.response.Response
 import io.restassured.specification.RequestSpecification
 import org.hamcrest.Matchers.*
+import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
+import qa.reinaldo._core.dados.UserCreated
 import qa.reinaldo._core.dados.UserData
 import java.io.File
+import java.io.FileWriter
+import java.io.IOException
 import java.util.concurrent.TimeUnit
+
 
 class CadastroBasicoTest {
 
@@ -27,6 +33,8 @@ class CadastroBasicoTest {
     val pathProject = System.getProperty("user.dir")
     // ler o arquivo json
     var cadastroJson = File("$pathProject/src/test/kotlin/resources/userData.json").readText(Charsets.UTF_8)
+    var userIDJson = File("$pathProject/src/test/kotlin/resources/userID.json")
+
     // passa os dados de json para objetos para o kotlin ler.
     val cadastroDadosBody = Gson().fromJson(cadastroJson, UserData::class.java)
     // usando o Faker para gerar dados aleatorios.
@@ -44,6 +52,18 @@ class CadastroBasicoTest {
             .build()
     }
 
+    private fun toJsonFile(value: String){
+        try {
+            // transforma o json para objeto para se alterado o id.
+            val userID: UserCreated = Gson().fromJson(userIDJson.readText(Charsets.UTF_8), UserCreated::class.java)
+            userID._id = value
+            // escreve os dados alterados para json.
+            FileWriter(userIDJson).use { writer -> Gson().toJson(userID, writer) }
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
+
     /**
      * Given > Contém pre-requisitos do meu teste, como URL, Header, Content Type, Aceita certificado invalido, e o Body.
      * When > Metodo HTTP que vai ser utilizado e o end point.
@@ -52,10 +72,11 @@ class CadastroBasicoTest {
      */
 
     @Test
+    @Order(1)
     fun cadastroDeUsuarioTest(){
         step("Realizando os testes de cadastro")
         cadastroDadosBody.email = faker.internet().emailAddress()
-        val message: String =
+        val id: String =
             Given {
                 spec(requestSpecification())
                 body(cadastroDadosBody)
@@ -68,13 +89,15 @@ class CadastroBasicoTest {
                 body("_id", notNullValue())
                 body("_id.length()", equalTo(16))
             } Extract {
-                path("message")
+                path("_id")
             }
-        println(message)
-        step("Message: $message")
+        println(id)
+        step("ID: $id")
+        toJsonFile(id)
     }
 
     @Test
+    @Order(2)
     fun cadastroDeUsuarioMessageEmailTest(){
         step("Realizando os testes de cadastro")
         val  response: Response =
