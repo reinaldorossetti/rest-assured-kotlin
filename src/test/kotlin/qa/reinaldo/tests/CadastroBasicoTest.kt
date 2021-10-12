@@ -2,20 +2,28 @@ package dev.serverest.tests
 
 import com.github.javafaker.Faker
 import com.google.gson.Gson
+import com.jayway.jsonpath.internal.JsonFormatter.prettyPrint
 import io.qameta.allure.Allure.step
+import io.restassured.RestAssured.withNoArgs
 import io.restassured.builder.RequestSpecBuilder
+import io.restassured.filter.log.LogDetail
 import io.restassured.http.ContentType
 import io.restassured.module.kotlin.extensions.Extract
 import io.restassured.module.kotlin.extensions.Given
 import io.restassured.module.kotlin.extensions.Then
 import io.restassured.module.kotlin.extensions.When
+import io.restassured.module.mockmvc.RestAssuredMockMvc
+import io.restassured.module.spring.commons.config.AsyncConfig.withTimeout
+import io.restassured.response.Response
 import io.restassured.specification.RequestSpecification
-import org.hamcrest.Matchers.equalTo
+import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.opentest4j.AssertionFailedError
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import qa.reinaldo._core.dados.UserData
 import java.io.File
+import java.util.concurrent.TimeUnit
 
 class CadastroBasicoTest {
 
@@ -30,11 +38,13 @@ class CadastroBasicoTest {
 
     // pre-requisito global para os testes serem executados
     fun requestSpecification(): RequestSpecification {
+        RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS));
         return RequestSpecBuilder()
             .setBaseUri("http://localhost:4200")
             .addHeader("Accept", "application/json")
             .setContentType(ContentType.JSON)
             .setRelaxedHTTPSValidation()
+            .log(LogDetail.ALL)
             .build()
     }
 
@@ -57,7 +67,10 @@ class CadastroBasicoTest {
                 post("/usuarios")
             } Then {
                 statusCode(201)
+                status().is2xxSuccessful
                 body("message", equalTo("Cadastro realizado com sucesso"))
+                body("_id", notNullValue())
+                body("_id.length()", equalTo(16))
             } Extract {
                 path("message")
             }
@@ -68,20 +81,23 @@ class CadastroBasicoTest {
     @Test
     fun cadastroDeUsuarioMessageEmailTest(){
         step("Realizando os testes de cadastro")
-        val message: String =
+        val  response: Response =
             Given {
                 spec(requestSpecification());
                 body(cadastroDadosBody)
+                log().ifValidationFails()
             } When {
                 post("/usuarios")
             } Then {
                 statusCode(400)
                 body("message", equalTo("Este email já está sendo usado"))
+                body("message", containsString("email já está sendo usado"))
+                body("_id", emptyOrNullString())
             } Extract {
-                path("message")
+                response()
             }
-        println(message)
-        step("Message: $message")
+        val message = response.path("message") as String
+        step("message: $message")
     }
 
 }

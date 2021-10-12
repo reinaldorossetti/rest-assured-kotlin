@@ -56,9 +56,6 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.6.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.6.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.11-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.11-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.11-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.11-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.6.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.6.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.6" level="project" />
@@ -113,6 +110,13 @@
     <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:rest-assured-common:4.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:xml-path:4.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:spring-mock-mvc:4.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:spring-commons:4.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-webmvc:5.3.11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.11-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-web:5.3.11-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:kotlin-extensions:4.4.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.8" level="project" />
     <orderEntry type="library" name="Maven: com.github.javafaker:javafaker:1.0.2" level="project" />
