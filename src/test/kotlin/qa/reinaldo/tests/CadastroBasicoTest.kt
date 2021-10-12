@@ -2,9 +2,7 @@ package dev.serverest.tests
 
 import com.github.javafaker.Faker
 import com.google.gson.Gson
-import com.jayway.jsonpath.internal.JsonFormatter.prettyPrint
 import io.qameta.allure.Allure.step
-import io.restassured.RestAssured.withNoArgs
 import io.restassured.builder.RequestSpecBuilder
 import io.restassured.filter.log.LogDetail
 import io.restassured.http.ContentType
@@ -18,8 +16,6 @@ import io.restassured.response.Response
 import io.restassured.specification.RequestSpecification
 import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertThrows
-import org.opentest4j.AssertionFailedError
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import qa.reinaldo._core.dados.UserData
 import java.io.File
@@ -38,7 +34,7 @@ class CadastroBasicoTest {
 
     // pre-requisito global para os testes serem executados
     fun requestSpecification(): RequestSpecification {
-        RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS));
+        RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS))
         return RequestSpecBuilder()
             .setBaseUri("http://localhost:4200")
             .addHeader("Accept", "application/json")
@@ -61,7 +57,7 @@ class CadastroBasicoTest {
         cadastroDadosBody.email = faker.internet().emailAddress()
         val message: String =
             Given {
-                spec(requestSpecification());
+                spec(requestSpecification())
                 body(cadastroDadosBody)
             } When {
                 post("/usuarios")
@@ -83,7 +79,7 @@ class CadastroBasicoTest {
         step("Realizando os testes de cadastro")
         val  response: Response =
             Given {
-                spec(requestSpecification());
+                spec(requestSpecification())
                 body(cadastroDadosBody)
                 log().ifValidationFails()
             } When {
