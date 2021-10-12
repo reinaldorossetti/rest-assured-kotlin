@@ -1,4 +1,4 @@
-package dev.serverest.tests
+package qa.reinaldo.tests
 
 import com.github.javafaker.Faker
 import com.google.gson.Gson
