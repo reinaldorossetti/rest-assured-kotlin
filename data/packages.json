@@ -5,26 +5,26 @@
     "name" : "qa.reinaldo.tests.CadastroBasicoTest",
     "children" : [ {
       "name" : "cadastroDeUsuarioTest",
-      "uid" : "f56829a2c01ecebd",
+      "uid" : "c131b0098b5d4407",
       "parentUid" : "8e860aa2997f7a2a8db115cc711cf102",
       "status" : "passed",
       "time" : {
-        "start" : 1634234577610,
-        "stop" : 1634234582083,
-        "duration" : 4473
+        "start" : 1634245173307,
+        "stop" : 1634245177675,
+        "duration" : 4368
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "cadastroDeUsuarioMessageEmailTest",
-      "uid" : "c13fb38573c906d5",
+      "uid" : "ea3b77bea0280a2b",
       "parentUid" : "8e860aa2997f7a2a8db115cc711cf102",
       "status" : "passed",
       "time" : {
-        "start" : 1634234582175,
-        "stop" : 1634234583168,
-        "duration" : 993
+        "start" : 1634245177771,
+        "stop" : 1634245178750,
+        "duration" : 979
       },
       "flaky" : false,
       "newFailed" : false,
