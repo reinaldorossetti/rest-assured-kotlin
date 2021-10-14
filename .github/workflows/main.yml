@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: '14'
     - name: Install operating system dependencies
-      run:  npx serverest@latest |
+      run:  |
        npm install -g allure-commandline --save-dev
     - uses: actions/checkout@v2
     - uses: microsoft/playwright-github-action@v1.5.0
