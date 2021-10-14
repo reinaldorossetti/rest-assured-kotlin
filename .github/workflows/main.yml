@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: '14'
     - name: Install operating system dependencies
-      run:  |
+      run:  npx serverest@latest |
        npm install -g allure-commandline --save-dev
     - uses: actions/checkout@v2
     - uses: microsoft/playwright-github-action@v1.5.0
@@ -50,9 +50,6 @@ jobs:
       if: always()
       continue-on-error: true
       run: mvn clean test --no-transfer-progress
-      env:
-        BROWSER: chromium
-        BROWSER_CHANNEL: ${{ matrix.browser-channel }}
     - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
       run: |
         allure generate ./allure-results -o allure-report/
