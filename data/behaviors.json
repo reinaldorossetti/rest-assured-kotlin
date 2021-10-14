@@ -1,31 +1,31 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
   "children" : [ {
     "name" : "cadastroDeUsuarioTest()",
-    "uid" : "589b242e1f9ed0db",
+    "uid" : "35dbeff8de91ca16",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1634245647931,
-      "stop" : 1634245652326,
-      "duration" : 4395
+      "start" : 1634254614935,
+      "stop" : 1634254619458,
+      "duration" : 4523
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "cadastroDeUsuarioMessageEmailTest()",
-    "uid" : "5a5e1e9fa33b16b1",
+    "uid" : "868249279651a30f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1634245652415,
-      "stop" : 1634245653397,
-      "duration" : 982
+      "start" : 1634254619554,
+      "stop" : 1634254620534,
+      "duration" : 980
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
-  } ],
-  "name" : "behaviors"
+  } ]
 }
