@@ -44,7 +44,7 @@ class CadastroBasicoTest {
     fun requestSpecification(): RequestSpecification {
         RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS))
         return RequestSpecBuilder()
-            .setBaseUri("http://localhost:4200")
+            .setBaseUri("https://serverest.dev/")
             .addHeader("Accept", "application/json")
             .setContentType(ContentType.JSON)
             .setRelaxedHTTPSValidation()
