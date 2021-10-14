@@ -104,7 +104,6 @@ class CadastroBasicoTest {
             Given {
                 spec(requestSpecification())
                 body(cadastroDadosBody)
-                log().ifValidationFails()
             } When {
                 post("/usuarios")
             } Then {
