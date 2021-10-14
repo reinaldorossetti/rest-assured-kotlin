@@ -1,0 +1,101 @@
+{
+  "uid" : "f56829a2c01ecebd",
+  "name" : "cadastroDeUsuarioTest()",
+  "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
+  "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
+  "time" : {
+    "start" : 1634234577610,
+    "stop" : 1634234582083,
+    "duration" : 4473
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Realizando os testes de cadastro",
+      "time" : {
+        "start" : 1634234577627,
+        "stop" : 1634234577629,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "ID: jCBrzwB6d5MdxAIb",
+      "time" : {
+        "start" : 1634234582072,
+        "stop" : 1634234582072,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioTest()]"
+  }, {
+    "name" : "host",
+    "value" : "fv-az71-365"
+  }, {
+    "name" : "thread",
+    "value" : "6080@fv-az71-365.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "qa.reinaldo.tests.CadastroBasicoTest"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.reinaldo.tests.CadastroBasicoTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "cadastroDeUsuarioTest"
+  }, {
+    "name" : "suite",
+    "value" : "qa.reinaldo.tests.CadastroBasicoTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f56829a2c01ecebd.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "qa.reinaldo.tests.CadastroBasicoTest",
+    "children" : [ {
+      "name" : "cadastroDeUsuarioTest()",
+      "uid" : "f56829a2c01ecebd",
+      "parentUid" : "73ac9d1e5a3059192f884eede74f21ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634234577610,
+        "stop" : 1634234582083,
+        "duration" : 4473
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "cadastroDeUsuarioMessageEmailTest()",
+      "uid" : "c13fb38573c906d5",
+      "parentUid" : "73ac9d1e5a3059192f884eede74f21ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634234582175,
+        "stop" : 1634234583168,
+        "duration" : 993
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "73ac9d1e5a3059192f884eede74f21ef"
+  } ]
+}
