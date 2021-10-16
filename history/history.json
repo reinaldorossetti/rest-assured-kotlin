@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2b11ff5822bfd956",
+      "uid" : "5414b805f9b9c9c8",
       "status" : "passed",
       "time" : {
-        "start" : 1634341045991,
-        "stop" : 1634341050076,
-        "duration" : 4085
+        "start" : 1634427411558,
+        "stop" : 1634427416438,
+        "duration" : 4880
       }
     } ]
   },
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dad2d6312bb1058c",
+      "uid" : "d80e6e19c4453d92",
       "status" : "failed",
-      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: XbvVh0VwxvUaI1q4\n",
+      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: CgR7S2t8ESEc1uoz\n",
       "time" : {
-        "start" : 1634341050162,
-        "stop" : 1634341051191,
-        "duration" : 1029
+        "start" : 1634427416542,
+        "stop" : 1634427417503,
+        "duration" : 961
       }
     } ]
   }
