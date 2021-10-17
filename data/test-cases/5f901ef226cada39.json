@@ -1,12 +1,12 @@
 {
-  "uid" : "5414b805f9b9c9c8",
+  "uid" : "5f901ef226cada39",
   "name" : "cadastroDeUsuarioTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
   "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1634427411558,
-    "stop" : 1634427416438,
-    "duration" : 4880
+    "start" : 1634513830325,
+    "stop" : 1634513834875,
+    "duration" : 4550
   },
   "description" : "",
   "status" : "passed",
@@ -19,40 +19,40 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1634427411575,
-        "stop" : 1634427411576,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0,
-      "hasContent" : false,
-      "stepsCount" : 0
-    }, {
-      "name" : "ID: B7y6QXEqf3PNF8tf",
-      "time" : {
-        "start" : 1634427416423,
-        "stop" : 1634427416423,
+        "start" : 1634513830344,
+        "stop" : 1634513830344,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0,
+      "stepsCount" : 0,
       "hasContent" : false,
-      "stepsCount" : 0
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "ID: qKxF8Ow5gPxUfI1y",
+      "time" : {
+        "start" : 1634513834858,
+        "stop" : 1634513834858,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
+    "stepsCount" : 2,
     "hasContent" : true,
-    "stepsCount" : 2
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -60,10 +60,10 @@
     "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioTest()]"
   }, {
     "name" : "host",
-    "value" : "fv-az71-365"
+    "value" : "fv-az30-58"
   }, {
     "name" : "thread",
-    "value" : "6236@fv-az71-365.main(1)"
+    "value" : "3556@fv-az30-58.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5414b805f9b9c9c8.json",
+  "source" : "5f901ef226cada39.json",
   "parameterValues" : [ ]
 }
