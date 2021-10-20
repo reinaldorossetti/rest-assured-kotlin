@@ -1,12 +1,12 @@
-package qa.reinaldo._core.dados
+package qa.reinaldo.dados
 
 data class UserData(
-        var nome: String,
-        var email: String,
-        val password: String,
-        val administrador: String,
+    val administrador: String,
+    var email: String,
+    var nome: String,
+    val password: String
 )
 
 data class UserCreated(
-        var _id: String = "",
+    var _id: String
 )

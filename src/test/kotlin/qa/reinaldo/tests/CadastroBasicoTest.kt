@@ -2,7 +2,6 @@ package qa.reinaldo.tests
 
 import com.github.javafaker.Faker
 import com.google.gson.Gson
-import com.google.gson.JsonElement
 import io.qameta.allure.Allure.step
 import io.restassured.builder.RequestSpecBuilder
 import io.restassured.filter.log.LogDetail
@@ -19,8 +18,8 @@ import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-import qa.reinaldo._core.dados.UserCreated
-import qa.reinaldo._core.dados.UserData
+import qa.reinaldo.dados.UserCreated
+import qa.reinaldo.dados.UserData
 import java.io.File
 import java.io.FileWriter
 import java.io.IOException
@@ -76,18 +75,17 @@ class CadastroBasicoTest {
     fun cadastroDeUsuarioTest(){
         step("Realizando os testes de cadastro")
         cadastroDadosBody.email = faker.internet().emailAddress()
+        cadastroDadosBody.nome = faker.name().fullName()
         val id: String =
             Given {
-                spec(requestSpecification())
-                body(cadastroDadosBody)
+                spec(requestSpecification()); body(cadastroDadosBody)
             } When {
                 post("/usuarios")
             } Then {
-                statusCode(201)
-                status().is2xxSuccessful
-                body("message", equalTo("Cadastro realizado com sucesso"))
-                body("_id", notNullValue())
-                body("_id.length()", equalTo(16))
+                assertThat().statusCode(201); status().is2xxSuccessful
+                assertThat().body("message", equalTo("Cadastro realizado com sucesso"))
+                assertThat().body("_id", notNullValue())
+                assertThat().body("_id.length()", equalTo(16))
             } Extract {
                 path("_id")
             }
