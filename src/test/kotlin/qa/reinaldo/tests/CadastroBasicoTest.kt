@@ -104,7 +104,6 @@ class CadastroBasicoTest {
             Given {
                 spec(requestSpecification())
                 body(cadastroDadosBody)
-                log().ifValidationFails()
             } When {
                 post("/usuarios")
             } Then {
@@ -116,7 +115,7 @@ class CadastroBasicoTest {
                 response()
             }
         val message = response.path("message") as String
-        step("message: $message")
+        step("message: $message"); step("response: ${response.print()}")
     }
 
 }
