@@ -30,5 +30,5 @@ Vídeo curto explicando o projeto:
 https://www.youtube.com/watch?v=DfNLaGjjN4o
 
 References:  
-https://github.com/rest-assured/rest-assured/wiki/Usage#kotlin-extension-module  
-https://start.spring.io  
+Doc: https://github.com/rest-assured/rest-assured/wiki/Usage#kotlin-extension-module  
+Site pra gerar esquecelo do Kotlin com Maven: https://start.spring.io  
