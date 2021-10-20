@@ -27,7 +27,9 @@ Para rodar os testes no terminal use o comando abaixo:
 https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
 
 Vídeo curto explicando o projeto:
-https://www.youtube.com/watch?v=DfNLaGjjN4o
+https://www.youtube.com/watch?v=DfNLaGjjN4o  
+
+Reporte no GitHub: https://reinaldorossetti.github.io/rest-assured-kotlin/index.html#suites  
 
 References:  
 Doc: https://github.com/rest-assured/rest-assured/wiki/Usage#kotlin-extension-module  
