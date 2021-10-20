@@ -3,26 +3,26 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "cadastroDeUsuarioTest()",
-    "uid" : "d03da940cdf5887e",
+    "uid" : "e36db9b24c3afb6b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1634686620956,
-      "stop" : 1634686625006,
-      "duration" : 4050
+      "start" : 1634754531846,
+      "stop" : 1634754536818,
+      "duration" : 4972
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "cadastroDeUsuarioMessageEmailTest()",
-    "uid" : "5ac306d59ae13a81",
+    "uid" : "d36c017ed6ea9224",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1634686625092,
-      "stop" : 1634686625991,
-      "duration" : 899
+      "start" : 1634754536943,
+      "stop" : 1634754537922,
+      "duration" : 979
     },
     "flaky" : false,
     "newFailed" : false,

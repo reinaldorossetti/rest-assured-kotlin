@@ -4,10 +4,10 @@
     "uid" : "73ac9d1e5a3059192f884eede74f21ef",
     "name" : "qa.reinaldo.tests.CadastroBasicoTest",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 2
     }

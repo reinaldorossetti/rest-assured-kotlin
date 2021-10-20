@@ -9,32 +9,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d03da940cdf5887e",
+      "uid" : "e36db9b24c3afb6b",
       "status" : "passed",
       "time" : {
-        "start" : 1634686620956,
-        "stop" : 1634686625006,
-        "duration" : 4050
+        "start" : 1634754531846,
+        "stop" : 1634754536818,
+        "duration" : 4972
       }
     } ]
   },
   "d19f0208b150d1b29dde47d93f8a7647" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5ac306d59ae13a81",
-      "status" : "failed",
-      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: VhPSDxgaJ2hz1fYx\n",
+      "uid" : "d36c017ed6ea9224",
+      "status" : "passed",
       "time" : {
-        "start" : 1634686625092,
-        "stop" : 1634686625991,
-        "duration" : 899
+        "start" : 1634754536943,
+        "stop" : 1634754537922,
+        "duration" : 979
       }
     } ]
   }
