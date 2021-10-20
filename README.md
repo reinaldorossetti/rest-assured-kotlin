@@ -19,6 +19,16 @@ Execute o seguinte comando no terminal:
 npx serverest@latest
 ```
 
+Para rodar os testes no terminal use o comando abaixo:
+```
+./mvnw clean test
+```
+
+Vídeo curto explicando o projeto:
+https://www.youtube.com/watch?v=DfNLaGjjN4o
+
+
+
 references:
 
 https://github.com/rest-assured/rest-assured/wiki/Usage#kotlin-extension-module
