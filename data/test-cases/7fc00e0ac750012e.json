@@ -1,12 +1,12 @@
 {
-  "uid" : "db390cbe249aeb75",
+  "uid" : "7fc00e0ac750012e",
   "name" : "cadastroDeUsuarioMessageEmailTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioMessageEmailTest",
   "historyId" : "d19f0208b150d1b29dde47d93f8a7647",
   "time" : {
-    "start" : 1634756695868,
-    "stop" : 1634756696836,
-    "duration" : 968
+    "start" : 1634759395348,
+    "stop" : 1634759396322,
+    "duration" : 974
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1634756695870,
-        "stop" : 1634756695870,
+        "start" : 1634759395350,
+        "stop" : 1634759395350,
         "duration" : 0
       },
       "status" : "passed",
@@ -29,13 +29,13 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "message: Este email já está sendo usado",
       "time" : {
-        "start" : 1634756696834,
-        "stop" : 1634756696834,
+        "start" : 1634759396319,
+        "stop" : 1634759396319,
         "duration" : 0
       },
       "status" : "passed",
@@ -44,13 +44,13 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "response: {\n    \"message\": \"Este email já está sendo usado\"\n}",
       "time" : {
-        "start" : 1634756696836,
-        "stop" : 1634756696836,
+        "start" : 1634759396321,
+        "stop" : 1634759396321,
         "duration" : 0
       },
       "status" : "passed",
@@ -59,15 +59,15 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "stepsCount" : 3,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -75,10 +75,10 @@
     "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioMessageEmailTest()]"
   }, {
     "name" : "host",
-    "value" : "fv-az30-960"
+    "value" : "fv-az71-190"
   }, {
     "name" : "thread",
-    "value" : "356@fv-az30-960.main(1)"
+    "value" : "2148@fv-az71-190.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -111,6 +111,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "db390cbe249aeb75.json",
+  "source" : "7fc00e0ac750012e.json",
   "parameterValues" : [ ]
 }
