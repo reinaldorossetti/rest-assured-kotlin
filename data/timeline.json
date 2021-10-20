@@ -2,38 +2,38 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az30-960",
+    "name" : "fv-az71-190",
     "children" : [ {
-      "name" : "1256@fv-az30-960.main(1)",
+      "name" : "6884@fv-az71-190.main(1)",
       "children" : [ {
-        "name" : "cadastroDeUsuarioTest()",
-        "uid" : "15f86778b86f049e",
-        "parentUid" : "1f4a300d8dee4792afd443a4cac77e13",
+        "name" : "cadastroDeUsuarioMessageEmailTest()",
+        "uid" : "4c850f27e8cbfd1",
+        "parentUid" : "aa7a557b749888fbb3021df6017db95d",
         "status" : "passed",
         "time" : {
-          "start" : 1634765224923,
-          "stop" : 1634765229985,
-          "duration" : 5062
+          "start" : 1634765401610,
+          "stop" : 1634765402606,
+          "duration" : 996
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "f4de5728835156ba",
-        "parentUid" : "1f4a300d8dee4792afd443a4cac77e13",
+        "name" : "cadastroDeUsuarioTest()",
+        "uid" : "e83ca314e211d96e",
+        "parentUid" : "aa7a557b749888fbb3021df6017db95d",
         "status" : "passed",
         "time" : {
-          "start" : 1634765230095,
-          "stop" : 1634765231105,
-          "duration" : 1010
+          "start" : 1634765396142,
+          "stop" : 1634765401504,
+          "duration" : 5362
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1f4a300d8dee4792afd443a4cac77e13"
+      "uid" : "aa7a557b749888fbb3021df6017db95d"
     } ],
-    "uid" : "0de69a627210011c99d2bad1df51a347"
+    "uid" : "3bb89e5f5cde606716f9fb35a57edf1f"
   } ]
 }
