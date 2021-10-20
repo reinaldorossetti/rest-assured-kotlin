@@ -1,20 +1,20 @@
 [ {
-  "uid" : "6bd5e169c5efaf7",
-  "name" : "cadastroDeUsuarioTest()",
+  "uid" : "c21130c3e09560f9",
+  "name" : "cadastroDeUsuarioMessageEmailTest()",
   "time" : {
-    "start" : 1634755659394,
-    "stop" : 1634755664057,
-    "duration" : 4663
+    "start" : 1634756456125,
+    "stop" : 1634756457089,
+    "duration" : 964
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2d6f73691fb15886",
-  "name" : "cadastroDeUsuarioMessageEmailTest()",
+  "uid" : "fc38ad11ca920788",
+  "name" : "cadastroDeUsuarioTest()",
   "time" : {
-    "start" : 1634755664153,
-    "stop" : 1634755665143,
-    "duration" : 990
+    "start" : 1634756451384,
+    "stop" : 1634756456028,
+    "duration" : 4644
   },
   "status" : "passed",
   "severity" : "normal"

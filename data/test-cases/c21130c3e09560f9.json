@@ -1,12 +1,12 @@
 {
-  "uid" : "2d6f73691fb15886",
+  "uid" : "c21130c3e09560f9",
   "name" : "cadastroDeUsuarioMessageEmailTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioMessageEmailTest",
   "historyId" : "d19f0208b150d1b29dde47d93f8a7647",
   "time" : {
-    "start" : 1634755664153,
-    "stop" : 1634755665143,
-    "duration" : 990
+    "start" : 1634756456125,
+    "stop" : 1634756457089,
+    "duration" : 964
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1634755664154,
-        "stop" : 1634755664154,
+        "start" : 1634756456127,
+        "stop" : 1634756456127,
         "duration" : 0
       },
       "status" : "passed",
@@ -29,13 +29,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "message: Este email já está sendo usado",
       "time" : {
-        "start" : 1634755665141,
-        "stop" : 1634755665141,
+        "start" : 1634756457087,
+        "stop" : 1634756457087,
         "duration" : 0
       },
       "status" : "passed",
@@ -44,13 +44,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "response: {\n    \"message\": \"Este email já está sendo usado\"\n}",
       "time" : {
-        "start" : 1634755665143,
-        "stop" : 1634755665143,
+        "start" : 1634756457089,
+        "stop" : 1634756457089,
         "duration" : 0
       },
       "status" : "passed",
@@ -59,15 +59,15 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 3,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -78,7 +78,7 @@
     "value" : "fv-az30-960"
   }, {
     "name" : "thread",
-    "value" : "5556@fv-az30-960.main(1)"
+    "value" : "4420@fv-az30-960.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -111,6 +111,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2d6f73691fb15886.json",
+  "source" : "c21130c3e09560f9.json",
   "parameterValues" : [ ]
 }
