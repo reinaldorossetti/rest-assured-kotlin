@@ -24,12 +24,10 @@ Para rodar os testes no terminal use o comando abaixo:
 ./mvnw clean test
 ```
 ** Obs: Precisa configurar o Java JDK 11 e adicionar o JAVA_HOME nas variáveis de ambiente, senão vai dar erro na execução.
+https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
 
 Vídeo curto explicando o projeto:
 https://www.youtube.com/watch?v=DfNLaGjjN4o
 
-
-
 References:
-
 https://github.com/rest-assured/rest-assured/wiki/Usage#kotlin-extension-module
