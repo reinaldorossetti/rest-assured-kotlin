@@ -1,12 +1,12 @@
 {
-  "uid" : "c41a0aa702ffcca5",
+  "uid" : "83950219eff97daf",
   "name" : "cadastroDeUsuarioMessageEmailTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioMessageEmailTest",
   "historyId" : "d19f0208b150d1b29dde47d93f8a7647",
   "time" : {
-    "start" : 1634764018555,
-    "stop" : 1634764019535,
-    "duration" : 980
+    "start" : 1634764070425,
+    "stop" : 1634764071383,
+    "duration" : 958
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1634764018556,
-        "stop" : 1634764018556,
+        "start" : 1634764070427,
+        "stop" : 1634764070427,
         "duration" : 0
       },
       "status" : "passed",
@@ -34,8 +34,8 @@
     }, {
       "name" : "message: Este email já está sendo usado",
       "time" : {
-        "start" : 1634764019531,
-        "stop" : 1634764019531,
+        "start" : 1634764071380,
+        "stop" : 1634764071380,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,8 +49,8 @@
     }, {
       "name" : "response: {\n    \"message\": \"Este email já está sendo usado\"\n}",
       "time" : {
-        "start" : 1634764019534,
-        "stop" : 1634764019534,
+        "start" : 1634764071382,
+        "stop" : 1634764071382,
         "duration" : 0
       },
       "status" : "passed",
@@ -75,10 +75,10 @@
     "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioMessageEmailTest()]"
   }, {
     "name" : "host",
-    "value" : "fv-az30-960"
+    "value" : "fv-az71-190"
   }, {
     "name" : "thread",
-    "value" : "3932@fv-az30-960.main(1)"
+    "value" : "3940@fv-az71-190.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -111,6 +111,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c41a0aa702ffcca5.json",
+  "source" : "83950219eff97daf.json",
   "parameterValues" : [ ]
 }
