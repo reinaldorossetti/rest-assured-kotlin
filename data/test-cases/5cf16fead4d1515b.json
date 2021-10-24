@@ -1,12 +1,12 @@
 {
-  "uid" : "57d797057ad43ae",
+  "uid" : "5cf16fead4d1515b",
   "name" : "cadastroDeUsuarioTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
   "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1635032213115,
-    "stop" : 1635032217912,
-    "duration" : 4797
+    "start" : 1635118605301,
+    "stop" : 1635118609901,
+    "duration" : 4600
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1635032213137,
-        "stop" : 1635032213138,
+        "start" : 1635118605319,
+        "stop" : 1635118605320,
         "duration" : 1
       },
       "status" : "passed",
@@ -29,13 +29,13 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "ID: MtlGmyEfag0CXfRo",
+      "name" : "ID: Ot6oFqs1R5fSmXye",
       "time" : {
-        "start" : 1635032217899,
-        "stop" : 1635032217899,
+        "start" : 1635118609889,
+        "stop" : 1635118609889,
         "duration" : 0
       },
       "status" : "passed",
@@ -44,15 +44,15 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "stepsCount" : 2,
     "hasContent" : true,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -63,7 +63,7 @@
     "value" : "fv-az30-258"
   }, {
     "name" : "thread",
-    "value" : "6688@fv-az30-258.main(1)"
+    "value" : "5852@fv-az30-258.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "57d797057ad43ae.json",
+  "source" : "5cf16fead4d1515b.json",
   "parameterValues" : [ ]
 }
