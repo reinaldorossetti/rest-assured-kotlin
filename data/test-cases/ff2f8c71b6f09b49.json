@@ -1,12 +1,12 @@
 {
-  "uid" : "1ff5d39ef644b953",
+  "uid" : "ff2f8c71b6f09b49",
   "name" : "cadastroDeUsuarioTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
   "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1635205065190,
-    "stop" : 1635205070123,
-    "duration" : 4933
+    "start" : 1635291442233,
+    "stop" : 1635291446643,
+    "duration" : 4410
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1635205065215,
-        "stop" : 1635205065216,
-        "duration" : 1
+        "start" : 1635291442248,
+        "stop" : 1635291442250,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -32,10 +32,10 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "ID: uPwEVJym8hBNC3Pn",
+      "name" : "ID: kQUqacWX7piDciib",
       "time" : {
-        "start" : 1635205070109,
-        "stop" : 1635205070109,
+        "start" : 1635291446629,
+        "stop" : 1635291446629,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,7 +63,7 @@
     "value" : "fv-az71-135"
   }, {
     "name" : "thread",
-    "value" : "1128@fv-az71-135.main(1)"
+    "value" : "6072@fv-az71-135.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1ff5d39ef644b953.json",
+  "source" : "ff2f8c71b6f09b49.json",
   "parameterValues" : [ ]
 }
