@@ -1,0 +1,101 @@
+{
+  "uid" : "36b5b7240a61792b",
+  "name" : "ListarUsuariosCadastrados()",
+  "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.ListarUsuariosCadastrados",
+  "historyId" : "212312b54934a80e9d7bd8fafb06f686",
+  "time" : {
+    "start" : 1635377846449,
+    "stop" : 1635377851505,
+    "duration" : 5056
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Realizando os testes de cadastro",
+      "time" : {
+        "start" : 1635377846470,
+        "stop" : 1635377846471,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Response: io.restassured.internal.RestAssuredResponseImpl@58690f5e",
+      "time" : {
+        "start" : 1635377851491,
+        "stop" : 1635377851491,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:ListarUsuariosCadastrados()]"
+  }, {
+    "name" : "host",
+    "value" : "fv-az71-185"
+  }, {
+    "name" : "thread",
+    "value" : "964@fv-az71-185.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "qa.reinaldo.tests.CadastroBasicoTest"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.reinaldo.tests.CadastroBasicoTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "ListarUsuariosCadastrados"
+  }, {
+    "name" : "suite",
+    "value" : "qa.reinaldo.tests.CadastroBasicoTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "36b5b7240a61792b.json",
+  "parameterValues" : [ ]
+}
