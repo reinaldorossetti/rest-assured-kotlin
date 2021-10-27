@@ -71,6 +71,27 @@ class CadastroBasicoTest {
      */
 
     @Test
+    @Order(0)
+    fun ListarUsuariosCadastrados(){
+        step("Realizando os testes de cadastro")
+        cadastroDadosBody.email = faker.internet().emailAddress()
+        cadastroDadosBody.nome = faker.name().fullName()
+        val dados: Response =
+            Given {
+                spec(requestSpecification()); body(cadastroDadosBody)
+            } When {
+                get("/usuarios")
+            } Then {
+                assertThat().statusCode(200)
+            } Extract {
+                response()
+            }
+        println(dados)
+        step("Response: $dados")
+    }
+
+
+    @Test
     @Order(1)
     fun cadastroDeUsuarioTest(){
         step("Realizando os testes de cadastro")
@@ -105,10 +126,10 @@ class CadastroBasicoTest {
             } When {
                 post("/usuarios")
             } Then {
-                statusCode(400)
-                body("message", equalTo("Este email já está sendo usado"))
-                body("message", containsString("email já está sendo usado"))
-                body("_id", emptyOrNullString())
+                assertThat().statusCode(400)
+                assertThat().body("message", equalTo("Este email já está sendo usado"))
+                assertThat().body("message", containsString("email já está sendo usado"))
+                assertThat().body("_id", emptyOrNullString())
             } Extract {
                 response()
             }

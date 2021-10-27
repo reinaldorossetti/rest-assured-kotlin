@@ -73,6 +73,34 @@
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.http4k/http4k-core -->
+		<dependency>
+			<groupId>org.http4k</groupId>
+			<artifactId>http4k-core</artifactId>
+			<version>4.16.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.http4k/http4k-client-okhttp -->
+		<dependency>
+			<groupId>org.http4k</groupId>
+			<artifactId>http4k-client-okhttp</artifactId>
+			<version>4.16.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.http4k/http4k-testing-chaos -->
+		<dependency>
+			<groupId>org.http4k</groupId>
+			<artifactId>http4k-testing-chaos</artifactId>
+			<version>4.16.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.http4k</groupId>
+			<artifactId>http4k-client-apache</artifactId>
+			<version>4.16.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jetbrains.kotlinx</groupId>
+			<artifactId>kotlinx-coroutines-core</artifactId>
+			<version>1.5.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
