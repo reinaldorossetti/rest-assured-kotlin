@@ -2,27 +2,40 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "cadastroDeUsuarioTest()",
-    "uid" : "ff2f8c71b6f09b49",
+    "name" : "ListarUsuariosCadastrados()",
+    "uid" : "a10c4666fd51055",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1635291442233,
-      "stop" : 1635291446643,
-      "duration" : 4410
+      "start" : 1635360046736,
+      "stop" : 1635360052622,
+      "duration" : 5886
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "cadastroDeUsuarioTest()",
+    "uid" : "c083f51476332e05",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1635360052743,
+      "stop" : 1635360054748,
+      "duration" : 2005
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "cadastroDeUsuarioMessageEmailTest()",
-    "uid" : "4852138e535c6cb2",
+    "uid" : "919a3a8f36a7d090",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1635291446742,
-      "stop" : 1635291447740,
-      "duration" : 998
+      "start" : 1635360054767,
+      "stop" : 1635360055785,
+      "duration" : 1018
     },
     "flaky" : false,
     "newFailed" : false,

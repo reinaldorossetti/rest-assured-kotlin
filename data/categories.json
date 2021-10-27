@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: h7xbIKOOR1wNK482\n",
+      "name" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: c4mIX3MZS1L1IAbT\n",
       "children" : [ {
         "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "4852138e535c6cb2",
-        "parentUid" : "5cc65e53d177ec695509926c5d89e9d0",
+        "uid" : "919a3a8f36a7d090",
+        "parentUid" : "288080f8dc41a0389f8d79d95a91fdb3",
         "status" : "failed",
         "time" : {
-          "start" : 1635291446742,
-          "stop" : 1635291447740,
-          "duration" : 998
+          "start" : 1635360054767,
+          "stop" : 1635360055785,
+          "duration" : 1018
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5cc65e53d177ec695509926c5d89e9d0"
+      "uid" : "288080f8dc41a0389f8d79d95a91fdb3"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

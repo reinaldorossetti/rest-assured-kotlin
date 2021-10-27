@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ff2f8c71b6f09b49",
+      "uid" : "c083f51476332e05",
       "status" : "passed",
       "time" : {
-        "start" : 1635291442233,
-        "stop" : 1635291446643,
-        "duration" : 4410
+        "start" : 1635360052743,
+        "stop" : 1635360054748,
+        "duration" : 2005
       }
     } ]
   },
@@ -28,13 +28,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4852138e535c6cb2",
+      "uid" : "919a3a8f36a7d090",
       "status" : "failed",
-      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: h7xbIKOOR1wNK482\n",
+      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: c4mIX3MZS1L1IAbT\n",
       "time" : {
-        "start" : 1635291446742,
-        "stop" : 1635291447740,
-        "duration" : 998
+        "start" : 1635360054767,
+        "stop" : 1635360055785,
+        "duration" : 1018
+      }
+    } ]
+  },
+  "212312b54934a80e9d7bd8fafb06f686" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a10c4666fd51055",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635360046736,
+        "stop" : 1635360052622,
+        "duration" : 5886
       }
     } ]
   }
