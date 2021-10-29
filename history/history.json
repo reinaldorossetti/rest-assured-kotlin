@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b88fbd60c62060e6",
+      "uid" : "7713418b456d4ddd",
       "status" : "passed",
       "time" : {
-        "start" : 1635464252126,
-        "stop" : 1635464254314,
-        "duration" : 2188
+        "start" : 1635550660128,
+        "stop" : 1635550661928,
+        "duration" : 1800
       }
     } ]
   },
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d82177b155bd483b",
+      "uid" : "399bc7a893daba4",
       "status" : "failed",
-      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: rOJX8RMyVSgsgekT\n",
+      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: kqA9FW7ULEgOgJJI\n",
       "time" : {
-        "start" : 1635464254332,
-        "stop" : 1635464255297,
-        "duration" : 965
+        "start" : 1635550661949,
+        "stop" : 1635550662861,
+        "duration" : 912
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b8e47c4ee92bc342",
+      "uid" : "dc32f89a3c627e29",
       "status" : "passed",
       "time" : {
-        "start" : 1635464247021,
-        "stop" : 1635464252018,
-        "duration" : 4997
+        "start" : 1635550655404,
+        "stop" : 1635550660040,
+        "duration" : 4636
       }
     } ]
   }
