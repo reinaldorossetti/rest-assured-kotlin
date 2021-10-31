@@ -1,12 +1,12 @@
 {
-  "uid" : "cf75e0eb69637aef",
+  "uid" : "790a9c64f31246c0",
   "name" : "ListarUsuariosCadastrados()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.ListarUsuariosCadastrados",
   "historyId" : "212312b54934a80e9d7bd8fafb06f686",
   "time" : {
-    "start" : 1635637032895,
-    "stop" : 1635637037765,
-    "duration" : 4870
+    "start" : 1635723426537,
+    "stop" : 1635723431117,
+    "duration" : 4580
   },
   "description" : "",
   "status" : "passed",
@@ -19,40 +19,40 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1635637032918,
-        "stop" : 1635637032919,
+        "start" : 1635723426552,
+        "stop" : 1635723426553,
         "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0,
       "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Response: io.restassured.internal.RestAssuredResponseImpl@1a5a4f8",
       "time" : {
-        "start" : 1635637037754,
-        "stop" : 1635637037754,
+        "start" : 1635723431106,
+        "stop" : 1635723431106,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0,
       "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
     "hasContent" : true,
-    "stepsCount" : 2
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -60,10 +60,10 @@
     "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:ListarUsuariosCadastrados()]"
   }, {
     "name" : "host",
-    "value" : "fv-az30-143"
+    "value" : "fv-az71-185"
   }, {
     "name" : "thread",
-    "value" : "6860@fv-az30-143.main(1)"
+    "value" : "1508@fv-az71-185.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "cf75e0eb69637aef.json",
+  "source" : "790a9c64f31246c0.json",
   "parameterValues" : [ ]
 }
