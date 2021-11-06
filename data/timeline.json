@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az30-527",
+    "name" : "fv-az71-598",
     "children" : [ {
-      "name" : "7160@fv-az30-527.main(1)",
+      "name" : "5708@fv-az71-598.main(1)",
       "children" : [ {
-        "name" : "ListarUsuariosCadastrados()",
-        "uid" : "3af739a7965dd885",
-        "parentUid" : "324d54a60b4032b5fdf167d6fd2cd92d",
+        "name" : "cadastroDeUsuarioTest()",
+        "uid" : "53f6f521cad2ca2b",
+        "parentUid" : "2882092be69f244ca8599ff0e2b33796",
         "status" : "passed",
         "time" : {
-          "start" : 1636155449294,
-          "stop" : 1636155454233,
-          "duration" : 4939
+          "start" : 1636241842170,
+          "stop" : 1636241843855,
+          "duration" : 1685
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "cadastroDeUsuarioTest()",
-        "uid" : "c540b94c643f1237",
-        "parentUid" : "324d54a60b4032b5fdf167d6fd2cd92d",
+        "name" : "ListarUsuariosCadastrados()",
+        "uid" : "35dd862f864ba5c8",
+        "parentUid" : "2882092be69f244ca8599ff0e2b33796",
         "status" : "passed",
         "time" : {
-          "start" : 1636155454341,
-          "stop" : 1636155456166,
-          "duration" : 1825
+          "start" : 1636241837665,
+          "stop" : 1636241842099,
+          "duration" : 4434
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "27f30cc0476dac11",
-        "parentUid" : "324d54a60b4032b5fdf167d6fd2cd92d",
+        "uid" : "87a8601c4e4039d6",
+        "parentUid" : "2882092be69f244ca8599ff0e2b33796",
         "status" : "failed",
         "time" : {
-          "start" : 1636155456182,
-          "stop" : 1636155457219,
-          "duration" : 1037
+          "start" : 1636241843871,
+          "stop" : 1636241844777,
+          "duration" : 906
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "324d54a60b4032b5fdf167d6fd2cd92d"
+      "uid" : "2882092be69f244ca8599ff0e2b33796"
     } ],
-    "uid" : "83eb292528889e70de2c53e56c46f46b"
-  } ]
+    "uid" : "a2930b2507a48880f698469b829b84b6"
+  } ],
+  "name" : "timeline"
 }
