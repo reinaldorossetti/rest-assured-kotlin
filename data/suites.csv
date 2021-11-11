@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Wed Nov 10 23:37:32 UTC 2021","Wed Nov 10 23:37:33 UTC 2021","1011","","qa.reinaldo.tests.CadastroBasicoTest","","qa.reinaldo.tests.CadastroBasicoTest","cadastroDeUsuarioMessageEmailTest","cadastroDeUsuarioMessageEmailTest()",""
-"passed","Wed Nov 10 23:37:30 UTC 2021","Wed Nov 10 23:37:32 UTC 2021","1877","","qa.reinaldo.tests.CadastroBasicoTest","","qa.reinaldo.tests.CadastroBasicoTest","cadastroDeUsuarioTest","cadastroDeUsuarioTest()",""
-"passed","Wed Nov 10 23:37:25 UTC 2021","Wed Nov 10 23:37:30 UTC 2021","5310","","qa.reinaldo.tests.CadastroBasicoTest","","qa.reinaldo.tests.CadastroBasicoTest","ListarUsuariosCadastrados","ListarUsuariosCadastrados()",""
+"failed","Thu Nov 11 23:37:58 UTC 2021","Thu Nov 11 23:37:59 UTC 2021","991","","qa.reinaldo.tests.CadastroBasicoTest","","qa.reinaldo.tests.CadastroBasicoTest","cadastroDeUsuarioMessageEmailTest","cadastroDeUsuarioMessageEmailTest()",""
+"passed","Thu Nov 11 23:37:52 UTC 2021","Thu Nov 11 23:37:57 UTC 2021","5062","","qa.reinaldo.tests.CadastroBasicoTest","","qa.reinaldo.tests.CadastroBasicoTest","ListarUsuariosCadastrados","ListarUsuariosCadastrados()",""
+"passed","Thu Nov 11 23:37:57 UTC 2021","Thu Nov 11 23:37:58 UTC 2021","1708","","qa.reinaldo.tests.CadastroBasicoTest","","qa.reinaldo.tests.CadastroBasicoTest","cadastroDeUsuarioTest","cadastroDeUsuarioTest()",""
