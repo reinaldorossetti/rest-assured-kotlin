@@ -4,48 +4,48 @@
   "children" : [ {
     "name" : "fv-az30-930",
     "children" : [ {
-      "name" : "2780@fv-az30-930.main(1)",
+      "name" : "1316@fv-az30-930.main(1)",
       "children" : [ {
-        "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "2f2ed3c30c3960a7",
-        "parentUid" : "ca7c099d6a83940056031aed7629f4b0",
-        "status" : "failed",
+        "name" : "ListarUsuariosCadastrados()",
+        "uid" : "2f6af6a4c529a3eb",
+        "parentUid" : "bfcf5b85f05abdb77c96290092e5e084",
+        "status" : "passed",
         "time" : {
-          "start" : 1636673878922,
-          "stop" : 1636673879913,
-          "duration" : 991
+          "start" : 1636760176767,
+          "stop" : 1636760181870,
+          "duration" : 5103
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "cadastroDeUsuarioTest()",
-        "uid" : "92fcc95418ee72a0",
-        "parentUid" : "ca7c099d6a83940056031aed7629f4b0",
+        "uid" : "a5e0dd06d67bfc6d",
+        "parentUid" : "bfcf5b85f05abdb77c96290092e5e084",
         "status" : "passed",
         "time" : {
-          "start" : 1636673877198,
-          "stop" : 1636673878906,
-          "duration" : 1708
+          "start" : 1636760181970,
+          "stop" : 1636760184023,
+          "duration" : 2053
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "ListarUsuariosCadastrados()",
-        "uid" : "82173356c2729804",
-        "parentUid" : "ca7c099d6a83940056031aed7629f4b0",
-        "status" : "passed",
+        "name" : "cadastroDeUsuarioMessageEmailTest()",
+        "uid" : "6618002fb40d0c08",
+        "parentUid" : "bfcf5b85f05abdb77c96290092e5e084",
+        "status" : "failed",
         "time" : {
-          "start" : 1636673872038,
-          "stop" : 1636673877100,
-          "duration" : 5062
+          "start" : 1636760184038,
+          "stop" : 1636760185255,
+          "duration" : 1217
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ca7c099d6a83940056031aed7629f4b0"
+      "uid" : "bfcf5b85f05abdb77c96290092e5e084"
     } ],
     "uid" : "bfd6e7a8677085440aa3c0139df22554"
   } ]

@@ -1,12 +1,12 @@
 {
-  "uid" : "92fcc95418ee72a0",
-  "name" : "cadastroDeUsuarioTest()",
-  "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
-  "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
+  "uid" : "2f6af6a4c529a3eb",
+  "name" : "ListarUsuariosCadastrados()",
+  "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.ListarUsuariosCadastrados",
+  "historyId" : "212312b54934a80e9d7bd8fafb06f686",
   "time" : {
-    "start" : 1636673877198,
-    "stop" : 1636673878906,
-    "duration" : 1708
+    "start" : 1636760176767,
+    "stop" : 1636760181870,
+    "duration" : 5103
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1636673877200,
-        "stop" : 1636673877200,
-        "duration" : 0
+        "start" : 1636760176786,
+        "stop" : 1636760176787,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -32,10 +32,10 @@
       "hasContent" : false,
       "stepsCount" : 0
     }, {
-      "name" : "ID: MilwYqDDdvSYxSLq",
+      "name" : "Response: io.restassured.internal.RestAssuredResponseImpl@1a5a4f8",
       "time" : {
-        "start" : 1636673878901,
-        "stop" : 1636673878901,
+        "start" : 1636760181857,
+        "stop" : 1636760181857,
         "duration" : 0
       },
       "status" : "passed",
@@ -57,13 +57,13 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "junit.platform.uniqueid",
-    "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioTest()]"
+    "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:ListarUsuariosCadastrados()]"
   }, {
     "name" : "host",
     "value" : "fv-az30-930"
   }, {
     "name" : "thread",
-    "value" : "2780@fv-az30-930.main(1)"
+    "value" : "1316@fv-az30-930.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -78,7 +78,7 @@
     "value" : "qa.reinaldo.tests.CadastroBasicoTest"
   }, {
     "name" : "testMethod",
-    "value" : "cadastroDeUsuarioTest"
+    "value" : "ListarUsuariosCadastrados"
   }, {
     "name" : "suite",
     "value" : "qa.reinaldo.tests.CadastroBasicoTest"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "92fcc95418ee72a0.json",
+  "source" : "2f6af6a4c529a3eb.json",
   "parameterValues" : [ ]
 }
