@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7759cb671e7dfd29",
+      "uid" : "6cf49518f5495245",
       "status" : "passed",
       "time" : {
-        "start" : 1636846635828,
-        "stop" : 1636846637503,
-        "duration" : 1675
+        "start" : 1636933028562,
+        "stop" : 1636933030299,
+        "duration" : 1737
       }
     } ]
   },
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2a96bf4eda436c9e",
+      "uid" : "e315b2ee3dbf6632",
       "status" : "failed",
-      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: QGbZ0v2wnvVYMnjE\n",
+      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: jCVzLdfyisP9XwFj\n",
       "time" : {
-        "start" : 1636846637520,
-        "stop" : 1636846638427,
-        "duration" : 907
+        "start" : 1636933030313,
+        "stop" : 1636933031275,
+        "duration" : 962
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1ae9d29f2df7c50",
+      "uid" : "5f5b7fdfcdcc4ef9",
       "status" : "passed",
       "time" : {
-        "start" : 1636846631463,
-        "stop" : 1636846635740,
-        "duration" : 4277
+        "start" : 1636933023662,
+        "stop" : 1636933028462,
+        "duration" : 4800
       }
     } ]
   }
