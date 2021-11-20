@@ -1,12 +1,12 @@
 {
-  "uid" : "fc167a5baf10df30",
-  "name" : "ListarUsuariosCadastrados()",
-  "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.ListarUsuariosCadastrados",
-  "historyId" : "212312b54934a80e9d7bd8fafb06f686",
+  "uid" : "f4bcfb41db5d0226",
+  "name" : "cadastroDeUsuarioTest()",
+  "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
+  "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1637365030465,
-    "stop" : 1637365035292,
-    "duration" : 4827
+    "start" : 1637451400183,
+    "stop" : 1637451401836,
+    "duration" : 1653
   },
   "description" : "",
   "status" : "passed",
@@ -19,51 +19,51 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1637365030482,
-        "stop" : 1637365030485,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Response: io.restassured.internal.RestAssuredResponseImpl@5392aa2b",
-      "time" : {
-        "start" : 1637365035280,
-        "stop" : 1637365035280,
+        "start" : 1637451400184,
+        "stop" : 1637451400184,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0,
+      "hasContent" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "ID: B2z5aMFOWPPzY5lm",
+      "time" : {
+        "start" : 1637451401831,
+        "stop" : 1637451401831,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
+    "hasContent" : true,
     "stepsCount" : 2,
-    "hasContent" : true
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "junit.platform.uniqueid",
-    "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:ListarUsuariosCadastrados()]"
+    "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioTest()]"
   }, {
     "name" : "host",
     "value" : "fv-az30-778"
   }, {
     "name" : "thread",
-    "value" : "4860@fv-az30-778.main(1)"
+    "value" : "6996@fv-az30-778.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -78,7 +78,7 @@
     "value" : "qa.reinaldo.tests.CadastroBasicoTest"
   }, {
     "name" : "testMethod",
-    "value" : "ListarUsuariosCadastrados"
+    "value" : "cadastroDeUsuarioTest"
   }, {
     "name" : "suite",
     "value" : "qa.reinaldo.tests.CadastroBasicoTest"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "fc167a5baf10df30.json",
+  "source" : "f4bcfb41db5d0226.json",
   "parameterValues" : [ ]
 }
