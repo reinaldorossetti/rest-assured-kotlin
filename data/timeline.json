@@ -4,48 +4,48 @@
   "children" : [ {
     "name" : "fv-az30-778",
     "children" : [ {
-      "name" : "6996@fv-az30-778.main(1)",
+      "name" : "5488@fv-az30-778.main(1)",
       "children" : [ {
+        "name" : "cadastroDeUsuarioMessageEmailTest()",
+        "uid" : "d31e33540f2b74b5",
+        "parentUid" : "f3be2bc49a760205266065e42ad51950",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637537835067,
+          "stop" : 1637537836051,
+          "duration" : 984
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "cadastroDeUsuarioTest()",
-        "uid" : "f4bcfb41db5d0226",
-        "parentUid" : "280e346ef2e5f605fd8156b7caa5cabe",
+        "uid" : "1c79b0863b085882",
+        "parentUid" : "f3be2bc49a760205266065e42ad51950",
         "status" : "passed",
         "time" : {
-          "start" : 1637451400183,
-          "stop" : 1637451401836,
-          "duration" : 1653
+          "start" : 1637537833211,
+          "stop" : 1637537835048,
+          "duration" : 1837
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "ListarUsuariosCadastrados()",
-        "uid" : "df23b4ac59cca7d4",
-        "parentUid" : "280e346ef2e5f605fd8156b7caa5cabe",
+        "uid" : "24461498bf27ce9c",
+        "parentUid" : "f3be2bc49a760205266065e42ad51950",
         "status" : "passed",
         "time" : {
-          "start" : 1637451396357,
-          "stop" : 1637451400118,
-          "duration" : 3761
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "330472769b224784",
-        "parentUid" : "280e346ef2e5f605fd8156b7caa5cabe",
-        "status" : "failed",
-        "time" : {
-          "start" : 1637451401855,
-          "stop" : 1637451402835,
-          "duration" : 980
+          "start" : 1637537828337,
+          "stop" : 1637537833123,
+          "duration" : 4786
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "280e346ef2e5f605fd8156b7caa5cabe"
+      "uid" : "f3be2bc49a760205266065e42ad51950"
     } ],
     "uid" : "571c5b2eb346f33d55c94aa1c99ccf7f"
   } ]

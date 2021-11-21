@@ -1,12 +1,12 @@
 {
-  "uid" : "f4bcfb41db5d0226",
+  "uid" : "1c79b0863b085882",
   "name" : "cadastroDeUsuarioTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
   "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1637451400183,
-    "stop" : 1637451401836,
-    "duration" : 1653
+    "start" : 1637537833211,
+    "stop" : 1637537835048,
+    "duration" : 1837
   },
   "description" : "",
   "status" : "passed",
@@ -19,40 +19,40 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1637451400184,
-        "stop" : 1637451400184,
+        "start" : 1637537833215,
+        "stop" : 1637537833215,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "ID: B2z5aMFOWPPzY5lm",
+      "name" : "ID: thTMNAujp867DN6k",
       "time" : {
-        "start" : 1637451401831,
-        "stop" : 1637451401831,
+        "start" : 1637537835043,
+        "stop" : 1637537835043,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 2,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -63,7 +63,7 @@
     "value" : "fv-az30-778"
   }, {
     "name" : "thread",
-    "value" : "6996@fv-az30-778.main(1)"
+    "value" : "5488@fv-az30-778.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f4bcfb41db5d0226.json",
+  "source" : "1c79b0863b085882.json",
   "parameterValues" : [ ]
 }
