@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1c79b0863b085882",
+      "uid" : "4e5d8ad3198fe441",
       "status" : "passed",
       "time" : {
-        "start" : 1637537833211,
-        "stop" : 1637537835048,
-        "duration" : 1837
+        "start" : 1637624241768,
+        "stop" : 1637624243434,
+        "duration" : 1666
       }
     } ]
   },
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d31e33540f2b74b5",
+      "uid" : "8fae83e836cfecb2",
       "status" : "failed",
-      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: qiWsCUpXBEybxs4O\n",
+      "statusDetails" : "4 expectations failed.\nExpected status code <400> but was <201>.\n\nJSON path message doesn't match.\nExpected: Este email já está sendo usado\n  Actual: Cadastro realizado com sucesso\n\nJSON path message doesn't match.\nExpected: a string containing \"email já está sendo usado\"\n  Actual: Cadastro realizado com sucesso\n\nJSON path _id doesn't match.\nExpected: (null or an empty string)\n  Actual: yoJyxhJ5tl5P48PZ\n",
       "time" : {
-        "start" : 1637537835067,
-        "stop" : 1637537836051,
-        "duration" : 984
+        "start" : 1637624243450,
+        "stop" : 1637624244328,
+        "duration" : 878
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "24461498bf27ce9c",
+      "uid" : "a52da03e1f36bbf3",
       "status" : "passed",
       "time" : {
-        "start" : 1637537828337,
-        "stop" : 1637537833123,
-        "duration" : 4786
+        "start" : 1637624237444,
+        "stop" : 1637624241692,
+        "duration" : 4248
       }
     } ]
   }
