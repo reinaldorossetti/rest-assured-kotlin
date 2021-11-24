@@ -1,12 +1,12 @@
 {
-  "uid" : "23eae06aaed64633",
+  "uid" : "7f62cb066bd0a9d5",
   "name" : "cadastroDeUsuarioTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
   "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1637710652647,
-    "stop" : 1637710654571,
-    "duration" : 1924
+    "start" : 1637797054922,
+    "stop" : 1637797056705,
+    "duration" : 1783
   },
   "description" : "",
   "status" : "passed",
@@ -19,40 +19,40 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1637710652649,
-        "stop" : 1637710652649,
+        "start" : 1637797054923,
+        "stop" : 1637797054923,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
-      "name" : "ID: cT6kpDHJpTqNgNbd",
+      "name" : "ID: JmTm7Gx3ZgPpiWUG",
       "time" : {
-        "start" : 1637710654559,
-        "stop" : 1637710654559,
+        "start" : 1637797056700,
+        "stop" : 1637797056700,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 2
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -60,10 +60,10 @@
     "value" : "[engine:junit-jupiter]/[class:qa.reinaldo.tests.CadastroBasicoTest]/[method:cadastroDeUsuarioTest()]"
   }, {
     "name" : "host",
-    "value" : "fv-az71-608"
+    "value" : "fv-az30-571"
   }, {
     "name" : "thread",
-    "value" : "5760@fv-az71-608.main(1)"
+    "value" : "6228@fv-az30-571.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "23eae06aaed64633.json",
+  "source" : "7f62cb066bd0a9d5.json",
   "parameterValues" : [ ]
 }
