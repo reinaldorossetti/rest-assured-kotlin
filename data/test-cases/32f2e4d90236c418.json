@@ -1,12 +1,12 @@
 {
-  "uid" : "b1bd17940780566c",
+  "uid" : "32f2e4d90236c418",
   "name" : "cadastroDeUsuarioTest()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.cadastroDeUsuarioTest",
   "historyId" : "b3a8ede5e707cc8c7aa2cfd9b202543b",
   "time" : {
-    "start" : 1637883431947,
-    "stop" : 1637883433546,
-    "duration" : 1599
+    "start" : 1637969833437,
+    "stop" : 1637969835050,
+    "duration" : 1613
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1637883431949,
-        "stop" : 1637883431949,
+        "start" : 1637969833439,
+        "stop" : 1637969833439,
         "duration" : 0
       },
       "status" : "passed",
@@ -29,13 +29,13 @@
       "parameters" : [ ],
       "hasContent" : false,
       "stepsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "ID: UOWAWTHUm0aNA4O5",
+      "name" : "ID: lCNwhRJt6Ut0dFTK",
       "time" : {
-        "start" : 1637883433541,
-        "stop" : 1637883433541,
+        "start" : 1637969835045,
+        "stop" : 1637969835045,
         "duration" : 0
       },
       "status" : "passed",
@@ -44,15 +44,15 @@
       "parameters" : [ ],
       "hasContent" : false,
       "stepsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "hasContent" : true,
     "stepsCount" : 2,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -63,7 +63,7 @@
     "value" : "fv-az71-966"
   }, {
     "name" : "thread",
-    "value" : "2432@fv-az71-966.main(1)"
+    "value" : "3640@fv-az71-966.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -96,6 +96,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b1bd17940780566c.json",
+  "source" : "32f2e4d90236c418.json",
   "parameterValues" : [ ]
 }
