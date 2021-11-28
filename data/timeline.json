@@ -4,48 +4,48 @@
   "children" : [ {
     "name" : "fv-az30-381",
     "children" : [ {
-      "name" : "3412@fv-az30-381.main(1)",
+      "name" : "3712@fv-az30-381.main(1)",
       "children" : [ {
-        "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "d13d016a257df259",
-        "parentUid" : "45df084b1c945aaa162dd2fc19e31376",
-        "status" : "failed",
+        "name" : "cadastroDeUsuarioTest()",
+        "uid" : "ac638df5b4baaf55",
+        "parentUid" : "8394937ed350d9fce5d43ea286bcf8b7",
+        "status" : "passed",
         "time" : {
-          "start" : 1638057378232,
-          "stop" : 1638057379194,
-          "duration" : 962
+          "start" : 1638142637749,
+          "stop" : 1638142639558,
+          "duration" : 1809
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "cadastroDeUsuarioTest()",
-        "uid" : "d434e28cafda6c06",
-        "parentUid" : "45df084b1c945aaa162dd2fc19e31376",
-        "status" : "passed",
+        "name" : "cadastroDeUsuarioMessageEmailTest()",
+        "uid" : "6d66f7657a04682",
+        "parentUid" : "8394937ed350d9fce5d43ea286bcf8b7",
+        "status" : "failed",
         "time" : {
-          "start" : 1638057376346,
-          "stop" : 1638057378213,
-          "duration" : 1867
+          "start" : 1638142639573,
+          "stop" : 1638142640556,
+          "duration" : 983
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "ListarUsuariosCadastrados()",
-        "uid" : "6170cc00a52e480a",
-        "parentUid" : "45df084b1c945aaa162dd2fc19e31376",
+        "uid" : "456741f2ddf1fcaa",
+        "parentUid" : "8394937ed350d9fce5d43ea286bcf8b7",
         "status" : "passed",
         "time" : {
-          "start" : 1638057371132,
-          "stop" : 1638057376244,
-          "duration" : 5112
+          "start" : 1638142633095,
+          "stop" : 1638142637664,
+          "duration" : 4569
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "45df084b1c945aaa162dd2fc19e31376"
+      "uid" : "8394937ed350d9fce5d43ea286bcf8b7"
     } ],
     "uid" : "c6ec7a143d2bac0c094fda567fea945a"
   } ]
