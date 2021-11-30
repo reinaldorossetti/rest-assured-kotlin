@@ -4,48 +4,48 @@
   "children" : [ {
     "name" : "fv-az30-471",
     "children" : [ {
-      "name" : "7064@fv-az30-471.main(1)",
+      "name" : "3520@fv-az30-471.main(1)",
       "children" : [ {
         "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "6d3004d5ab5b2f27",
-        "parentUid" : "93396ebe7fee2b8cf4661467b304a3c1",
+        "uid" : "9aa8caaf4b840a5b",
+        "parentUid" : "953aa050616bb3de0822378309b20b83",
         "status" : "failed",
         "time" : {
-          "start" : 1638229074754,
-          "stop" : 1638229075767,
-          "duration" : 1013
+          "start" : 1638315467961,
+          "stop" : 1638315468960,
+          "duration" : 999
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "cadastroDeUsuarioTest()",
-        "uid" : "1107b17c1e02be16",
-        "parentUid" : "93396ebe7fee2b8cf4661467b304a3c1",
+        "uid" : "780b68a0d322a78c",
+        "parentUid" : "953aa050616bb3de0822378309b20b83",
         "status" : "passed",
         "time" : {
-          "start" : 1638229072924,
-          "stop" : 1638229074739,
-          "duration" : 1815
+          "start" : 1638315465773,
+          "stop" : 1638315467917,
+          "duration" : 2144
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "ListarUsuariosCadastrados()",
-        "uid" : "46e02a3df3e07450",
-        "parentUid" : "93396ebe7fee2b8cf4661467b304a3c1",
+        "uid" : "b3f8b785a27d5475",
+        "parentUid" : "953aa050616bb3de0822378309b20b83",
         "status" : "passed",
         "time" : {
-          "start" : 1638229067355,
-          "stop" : 1638229072814,
-          "duration" : 5459
+          "start" : 1638315460341,
+          "stop" : 1638315465693,
+          "duration" : 5352
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "93396ebe7fee2b8cf4661467b304a3c1"
+      "uid" : "953aa050616bb3de0822378309b20b83"
     } ],
     "uid" : "0767eb1ae1f761d34518d73eb9880074"
   } ]
