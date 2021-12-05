@@ -1,44 +1,5 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
-  "children" : [ {
-    "name" : "ListarUsuariosCadastrados()",
-    "uid" : "be744a0908f5c3c5",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1638661112668,
-      "stop" : 1638661116936,
-      "duration" : 4268
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "cadastroDeUsuarioTest()",
-    "uid" : "8c7311a09fc605dc",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1638661117016,
-      "stop" : 1638661118626,
-      "duration" : 1610
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "cadastroDeUsuarioMessageEmailTest()",
-    "uid" : "4022a2f879d4dc7f",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
-    "time" : {
-      "start" : 1638661118642,
-      "stop" : 1638661119532,
-      "duration" : 890
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  } ]
+  "children" : [ ]
 }
