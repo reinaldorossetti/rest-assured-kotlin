@@ -1,1 +1,31 @@
-[ ]
+[ {
+  "uid" : "49e905be1d478c53",
+  "name" : "ListarUsuariosCadastrados()",
+  "time" : {
+    "start" : 1638833954505,
+    "stop" : 1638833959248,
+    "duration" : 4743
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90605d77c70a9f6a",
+  "name" : "cadastroDeUsuarioTest()",
+  "time" : {
+    "start" : 1638833959357,
+    "stop" : 1638833960997,
+    "duration" : 1640
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8477eb739456c1f8",
+  "name" : "cadastroDeUsuarioMessageEmailTest()",
+  "time" : {
+    "start" : 1638833961017,
+    "stop" : 1638833961982,
+    "duration" : 965
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
