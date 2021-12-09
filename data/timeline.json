@@ -2,51 +2,51 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az30-354",
+    "name" : "fv-az71-27",
     "children" : [ {
-      "name" : "4612@fv-az30-354.main(1)",
+      "name" : "7072@fv-az71-27.main(1)",
       "children" : [ {
+        "name" : "cadastroDeUsuarioMessageEmailTest()",
+        "uid" : "d7a98d06cb3bef63",
+        "parentUid" : "8bad32a78e046cb6f99f5ecde1705f88",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639093083217,
+          "stop" : 1639093084125,
+          "duration" : 908
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "cadastroDeUsuarioTest()",
-        "uid" : "34d37b75c71f8167",
-        "parentUid" : "aaa0011bc1e0c086cbf5e7ef291b2a29",
+        "uid" : "6e4230637ab2a107",
+        "parentUid" : "8bad32a78e046cb6f99f5ecde1705f88",
         "status" : "passed",
         "time" : {
-          "start" : 1639006698564,
-          "stop" : 1639006700345,
-          "duration" : 1781
+          "start" : 1639093081603,
+          "stop" : 1639093083202,
+          "duration" : 1599
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "ListarUsuariosCadastrados()",
-        "uid" : "f2e5c429b31a33a4",
-        "parentUid" : "aaa0011bc1e0c086cbf5e7ef291b2a29",
+        "uid" : "46bd891e69d1e059",
+        "parentUid" : "8bad32a78e046cb6f99f5ecde1705f88",
         "status" : "passed",
         "time" : {
-          "start" : 1639006693607,
-          "stop" : 1639006698478,
-          "duration" : 4871
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "63dec477bda278dc",
-        "parentUid" : "aaa0011bc1e0c086cbf5e7ef291b2a29",
-        "status" : "failed",
-        "time" : {
-          "start" : 1639006700369,
-          "stop" : 1639006701380,
-          "duration" : 1011
+          "start" : 1639093077467,
+          "stop" : 1639093081523,
+          "duration" : 4056
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "aaa0011bc1e0c086cbf5e7ef291b2a29"
+      "uid" : "8bad32a78e046cb6f99f5ecde1705f88"
     } ],
-    "uid" : "de9f7247cb52f02299e5d24c157671e6"
+    "uid" : "18cd7d7d57a7afa98124a1fc7f0a3c64"
   } ]
 }
