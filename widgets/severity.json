@@ -1,30 +1,30 @@
 [ {
-  "uid" : "9b945f22d720993d",
-  "name" : "cadastroDeUsuarioTest()",
-  "time" : {
-    "start" : 1640129939763,
-    "stop" : 1640129941693,
-    "duration" : 1930
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "551a96f8925b9adc",
+  "uid" : "3f1839b57af8c9f0",
   "name" : "cadastroDeUsuarioMessageEmailTest()",
   "time" : {
-    "start" : 1640129941715,
-    "stop" : 1640129942740,
-    "duration" : 1025
+    "start" : 1640216406014,
+    "stop" : 1640216406957,
+    "duration" : 943
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "b82d5f3f18450e",
+  "uid" : "c40592c42b1015ab",
+  "name" : "cadastroDeUsuarioTest()",
+  "time" : {
+    "start" : 1640216404405,
+    "stop" : 1640216405993,
+    "duration" : 1588
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56fbe98acecf29e9",
   "name" : "ListarUsuariosCadastrados()",
   "time" : {
-    "start" : 1640129934191,
-    "stop" : 1640129939630,
-    "duration" : 5439
+    "start" : 1640216399842,
+    "stop" : 1640216404327,
+    "duration" : 4485
   },
   "status" : "passed",
   "severity" : "normal"
