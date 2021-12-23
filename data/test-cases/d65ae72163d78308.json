@@ -1,12 +1,12 @@
 {
-  "uid" : "56fbe98acecf29e9",
+  "uid" : "d65ae72163d78308",
   "name" : "ListarUsuariosCadastrados()",
   "fullName" : "qa.reinaldo.tests.CadastroBasicoTest.ListarUsuariosCadastrados",
   "historyId" : "212312b54934a80e9d7bd8fafb06f686",
   "time" : {
-    "start" : 1640216399842,
-    "stop" : 1640216404327,
-    "duration" : 4485
+    "start" : 1640302725073,
+    "stop" : 1640302729497,
+    "duration" : 4424
   },
   "description" : "",
   "status" : "passed",
@@ -23,40 +23,40 @@
     "steps" : [ {
       "name" : "Realizando os testes de cadastro",
       "time" : {
-        "start" : 1640216399862,
-        "stop" : 1640216399863,
+        "start" : 1640302725090,
+        "stop" : 1640302725091,
         "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
+      "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
-      "name" : "Response: io.restassured.internal.RestAssuredResponseImpl@1a5a4f8",
+      "name" : "Response: io.restassured.internal.RestAssuredResponseImpl@5392aa2b",
       "time" : {
-        "start" : 1640216404318,
-        "stop" : 1640216404318,
+        "start" : 1640302729487,
+        "stop" : 1640302729487,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
+      "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
-    "hasContent" : true,
+    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "hasContent" : true,
+    "stepsCount" : 2
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -67,7 +67,7 @@
     "value" : "fv-az71-34"
   }, {
     "name" : "thread",
-    "value" : "1132@fv-az71-34.main(1)"
+    "value" : "4572@fv-az71-34.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -100,6 +100,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "56fbe98acecf29e9.json",
+  "source" : "d65ae72163d78308.json",
   "parameterValues" : [ ]
 }
