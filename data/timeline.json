@@ -4,33 +4,16 @@
   "children" : [ {
     "name" : "fv-az30-599",
     "children" : [ {
-      "name" : "1160@fv-az30-599.main(1)",
+      "name" : "6264@fv-az30-599.main(1)",
       "children" : [ {
-        "name" : "ListarUsuariosCadastrados()",
-        "uid" : "244915bdf966d50f",
-        "parentUid" : "a653bfa68f0e145196dea5cfe70fc1f4",
-        "status" : "passed",
-        "time" : {
-          "start" : 1640389101178,
-          "stop" : 1640389105527,
-          "duration" : 4349
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "cadastroDeUsuarioMessageEmailTest()",
-        "uid" : "ffae8329a619fd0e",
-        "parentUid" : "a653bfa68f0e145196dea5cfe70fc1f4",
+        "uid" : "c0dc468af9b09231",
+        "parentUid" : "a43c208165585b3e13d310a65a0dabc5",
         "status" : "failed",
         "time" : {
-          "start" : 1640389107246,
-          "stop" : 1640389108259,
-          "duration" : 1013
+          "start" : 1640475481487,
+          "stop" : 1640475482471,
+          "duration" : 984
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +24,30 @@
         "parameters" : [ ]
       }, {
         "name" : "cadastroDeUsuarioTest()",
-        "uid" : "f7ed4ffd13c0b474",
-        "parentUid" : "a653bfa68f0e145196dea5cfe70fc1f4",
+        "uid" : "65e0a46773776dcf",
+        "parentUid" : "a43c208165585b3e13d310a65a0dabc5",
         "status" : "passed",
         "time" : {
-          "start" : 1640389105601,
-          "stop" : 1640389107228,
-          "duration" : 1627
+          "start" : 1640475479766,
+          "stop" : 1640475481470,
+          "duration" : 1704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "ListarUsuariosCadastrados()",
+        "uid" : "f1e58ca0ed755ad7",
+        "parentUid" : "a43c208165585b3e13d310a65a0dabc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640475475194,
+          "stop" : 1640475479681,
+          "duration" : 4487
         },
         "flaky" : false,
         "newFailed" : false,
@@ -57,7 +57,7 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a653bfa68f0e145196dea5cfe70fc1f4"
+      "uid" : "a43c208165585b3e13d310a65a0dabc5"
     } ],
     "uid" : "8b742297fb67fa4455a9b30f0aa97df2"
   } ]
