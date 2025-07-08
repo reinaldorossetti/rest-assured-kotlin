@@ -43,7 +43,7 @@ class CadastroBasicoTest {
     fun requestSpecification(): RequestSpecification {
         RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS))
         return RequestSpecBuilder()
-            .setBaseUri("https://serverest.dev/")
+            .setBaseUri("http://localhost:3000/")
             .addHeader("Accept", "application/json")
             .setContentType(ContentType.JSON)
             .setRelaxedHTTPSValidation()
@@ -76,7 +76,7 @@ class CadastroBasicoTest {
         step("Realizando os testes de cadastro")
         cadastroDadosBody.email = faker.internet().emailAddress()
         cadastroDadosBody.nome = faker.name().fullName()
-        val dados: Response =
+        val dados: String =
             Given {
                 spec(requestSpecification()); body(cadastroDadosBody)
             } When {
@@ -84,10 +84,9 @@ class CadastroBasicoTest {
             } Then {
                 assertThat().statusCode(200)
             } Extract {
-                response()
+                response().body().asString()
             }
-        println(dados)
-        step("Response: $dados")
+        step("Response:/n $dados")
     }
 
 
@@ -110,7 +109,6 @@ class CadastroBasicoTest {
             } Extract {
                 path("_id")
             }
-        println(id)
         step("ID: $id")
         toJsonFile(id)
     }
