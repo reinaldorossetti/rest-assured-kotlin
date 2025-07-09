@@ -46,8 +46,8 @@
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-all -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured-all</artifactId>
-			<version>4.5.1</version>
+			<artifactId>rest-assured</artifactId>
+			<version>5.5.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -67,6 +67,16 @@
 			<artifactId>kotlin-extensions</artifactId>
 			<version>5.5.0</version>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.codehaus.groovy</groupId>
+					<artifactId>groovy</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.codehaus.groovy</groupId>
+					<artifactId>groovy-xml</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
