@@ -47,25 +47,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>5.5.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>spring-mock-mvc</artifactId>
-			<version>5.5.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-path</artifactId>
-			<version>5.5.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>kotlin-extensions</artifactId>
-			<version>5.5.0</version>
+			<version>5.4.0</version>
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
@@ -77,6 +59,29 @@
 					<artifactId>groovy-xml</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>xml-path</artifactId>
+			<version>5.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>kotlin-extensions</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
@@ -138,19 +143,19 @@
 				</dependencies>
 			</plugin>
 			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version>
-            <configuration>
-                <!-- Habilita execução paralela dos testes -->
-                <parallel>methods</parallel>
-                <threadCount>2</threadCount>
-                <useUnlimitedThreads>false</useUnlimitedThreads>
-                <perCoreThreadCount>false</perCoreThreadCount>
-                <forkCount>1</forkCount>
-                <reuseForks>true</reuseForks>
-            </configuration>
-        </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+				<configuration>
+					<!-- Habilita execução paralela dos testes -->
+					<parallel>methods</parallel>
+					<threadCount>2</threadCount>
+					<useUnlimitedThreads>false</useUnlimitedThreads>
+					<perCoreThreadCount>false</perCoreThreadCount>
+					<forkCount>1</forkCount>
+					<reuseForks>true</reuseForks>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<repositories>
