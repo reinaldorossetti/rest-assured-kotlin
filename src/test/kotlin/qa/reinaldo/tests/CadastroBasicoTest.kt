@@ -3,71 +3,30 @@ package qa.reinaldo.tests
 import com.github.javafaker.Faker
 import com.google.gson.Gson
 import io.qameta.allure.Allure.*
-import io.restassured.builder.RequestSpecBuilder
-import io.restassured.filter.log.LogDetail
-import io.restassured.http.ContentType
-import io.restassured.module.kotlin.extensions.*
 import io.restassured.RestAssured.*
-import io.restassured.module.mockmvc.RestAssuredMockMvc
-import io.restassured.module.spring.commons.config.AsyncConfig.withTimeout
+import io.restassured.module.jsv.JsonSchemaValidator.*
+import io.restassured.module.kotlin.extensions.*
 import io.restassured.response.Response
-import io.restassured.specification.RequestSpecification
 import org.hamcrest.Matchers.*
 import org.json.JSONObject
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-import qa.reinaldo.dados.UserCreated
 import qa.reinaldo.dados.UserData
+import qa.reinaldo.support.Setup
 import java.io.File
-import java.io.FileWriter
-import java.io.IOException
-import java.util.concurrent.TimeUnit
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+class CadastroBasicoTest : Setup() {
 
 
-class CadastroBasicoTest {
-
-    // pega o caminho do projeto
-    private val pathProject: String = System.getProperty("user.dir")
     // ler o arquivo json
     private var cadastroJson = File("$pathProject/src/test/kotlin/resources/userData.json").readText(Charsets.UTF_8)
-    private var userIDJson = File("$pathProject/src/test/kotlin/resources/userID.json")
-
     // passa os dados de json para objetos para o kotlin ler.
     private val cadastroDadosBody: UserData = Gson().fromJson(cadastroJson, UserData::class.java)
     // usando o Faker para gerar dados aleatorios.
     private var faker = Faker()
-
-    // pre-requisito global para os testes serem executados
-    fun requestSpecification(): RequestSpecification {
-        RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS))
-        return RequestSpecBuilder()
-            .setBaseUri("http://localhost:3000/")
-            .addHeader("Accept", "application/json")
-            .setContentType(ContentType.JSON)
-            .setRelaxedHTTPSValidation()
-            .log(LogDetail.ALL)
-            .build()
-    }
-
-    private fun toJsonFile(value: String){
-        try {
-            // transforma o json para objeto para se alterado o id.
-            val userID: UserCreated = Gson().fromJson(userIDJson.readText(Charsets.UTF_8), UserCreated::class.java)
-            userID._id = value
-            // escreve os dados alterados para json.
-            FileWriter(userIDJson).use { writer -> Gson().toJson(userID, writer) }
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
-    }
-
-    /**
-     * Given > Contém pre-requisitos do meu teste, como URL, Header, Content Type, Aceita certificado invalido, e o Body.
-     * When > Metodo HTTP que vai ser utilizado e o end point.
-     * Then > Vai conter as validacoes\assertivas como retorno 201 e message igual ao valor esperado.
-     * Extract > Vai extrair a informacao da message para ser usada no relatorio.
-     */
 
     @Test
     @Order(1)
@@ -115,7 +74,7 @@ class CadastroBasicoTest {
     }
     @Test
     @Order(3)
-    fun listar_novo_usuario_cadastrados(){
+    fun listar_novo_usuario_cadastrado(){
         description("CT03 - Realizar a listagem de usuários cadastros - Teste Positivo")
         cadastroDadosBody.email = faker.internet().emailAddress()
         cadastroDadosBody.nome = faker.name().fullName()
@@ -145,5 +104,25 @@ class CadastroBasicoTest {
                 response().body().asString()
             }
         step("Response:/n $dados")
+    }
+
+    @Test
+    @Order(4)
+    fun validar_json_schema_do_cadastrado(){
+        description("CT03 - Realizar a listagem de usuários cadastros - Teste Positivo")
+        cadastroDadosBody.email = faker.internet().emailAddress()
+        cadastroDadosBody.nome = faker.name().fullName()
+
+        // Lê o arquivo do schema como string
+        val schema = String(Files.readAllBytes(Paths.get("src/test/kotlin/resources/cadasdro_schema.json")))
+
+        Given {
+            spec(requestSpecification()); body(cadastroDadosBody)
+        } When {
+            post("/usuarios")
+        } Then {
+            assertThat().statusCode(201); status().is2xxSuccessful
+            body(matchesJsonSchema(schema))
+        }
     }
 }

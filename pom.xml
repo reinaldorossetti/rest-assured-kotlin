@@ -48,7 +48,6 @@
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>5.4.0</version>
-			<scope>test</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>org.codehaus.groovy</groupId>
@@ -69,7 +68,6 @@
 			<groupId>io.rest-assured</groupId>
 			<artifactId>spring-mock-mvc</artifactId>
 			<version>5.4.0</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
@@ -80,6 +78,13 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>kotlin-extensions</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Rest Assured JSON Schema Validator -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
 			<version>5.4.0</version>
 			<scope>test</scope>
 		</dependency>
@@ -99,6 +104,12 @@
 			<groupId>org.jetbrains.kotlinx</groupId>
 			<artifactId>kotlinx-coroutines-core</artifactId>
 			<version>1.5.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>2.4</version>
 		</dependency>
 	</dependencies>
 
