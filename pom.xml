@@ -15,7 +15,7 @@
 	<description>Automação com Kotlin e Rest-Assured</description>
 	<properties>
 		<java.version>11</java.version>
-		<kotlin.version>1.5.31</kotlin.version>
+		<kotlin.version>1.9.0</kotlin.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5 -->
@@ -43,22 +43,29 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-all -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>4.4.0</version>
+			<artifactId>rest-assured-all</artifactId>
+			<version>4.5.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>spring-mock-mvc</artifactId>
-			<version>4.4.0</version>
+			<version>5.5.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>5.5.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>kotlin-extensions</artifactId>
-			<version>4.4.0</version>
+			<version>5.5.0</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
@@ -72,29 +79,6 @@
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.http4k/http4k-core -->
-		<dependency>
-			<groupId>org.http4k</groupId>
-			<artifactId>http4k-core</artifactId>
-			<version>4.16.1.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.http4k/http4k-client-okhttp -->
-		<dependency>
-			<groupId>org.http4k</groupId>
-			<artifactId>http4k-client-okhttp</artifactId>
-			<version>4.16.1.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.http4k/http4k-testing-chaos -->
-		<dependency>
-			<groupId>org.http4k</groupId>
-			<artifactId>http4k-testing-chaos</artifactId>
-			<version>4.16.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.http4k</groupId>
-			<artifactId>http4k-client-apache</artifactId>
-			<version>4.16.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jetbrains.kotlinx</groupId>
@@ -139,10 +123,24 @@
 					<dependency>
 						<groupId>org.jetbrains.kotlin</groupId>
 						<artifactId>kotlin-maven-allopen</artifactId>
-						<version>${kotlin.version}</version>
+						<version>1.6.21</version>
 					</dependency>
 				</dependencies>
 			</plugin>
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.5</version>
+            <configuration>
+                <!-- Habilita execução paralela dos testes -->
+                <parallel>methods</parallel>
+                <threadCount>2</threadCount>
+                <useUnlimitedThreads>false</useUnlimitedThreads>
+                <perCoreThreadCount>false</perCoreThreadCount>
+                <forkCount>1</forkCount>
+                <reuseForks>true</reuseForks>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 	<repositories>

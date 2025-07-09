@@ -1,7 +1,7 @@
 package qa.reinaldo.dados
 
 data class UserData(
-    var administrador: String,
+    var administrador: String = "true",
     var email: String,
     var nome: String,
     val password: String

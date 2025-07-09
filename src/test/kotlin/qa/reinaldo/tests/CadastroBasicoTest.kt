@@ -2,19 +2,18 @@ package qa.reinaldo.tests
 
 import com.github.javafaker.Faker
 import com.google.gson.Gson
-import io.qameta.allure.Allure.step
+import io.qameta.allure.Allure.*
 import io.restassured.builder.RequestSpecBuilder
 import io.restassured.filter.log.LogDetail
 import io.restassured.http.ContentType
-import io.restassured.module.kotlin.extensions.Extract
-import io.restassured.module.kotlin.extensions.Given
-import io.restassured.module.kotlin.extensions.Then
-import io.restassured.module.kotlin.extensions.When
+import io.restassured.module.kotlin.extensions.*
+import io.restassured.RestAssured.*
 import io.restassured.module.mockmvc.RestAssuredMockMvc
 import io.restassured.module.spring.commons.config.AsyncConfig.withTimeout
 import io.restassured.response.Response
 import io.restassured.specification.RequestSpecification
 import org.hamcrest.Matchers.*
+import org.json.JSONObject
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
@@ -29,15 +28,15 @@ import java.util.concurrent.TimeUnit
 class CadastroBasicoTest {
 
     // pega o caminho do projeto
-    val pathProject = System.getProperty("user.dir")
+    private val pathProject: String = System.getProperty("user.dir")
     // ler o arquivo json
-    var cadastroJson = File("$pathProject/src/test/kotlin/resources/userData.json").readText(Charsets.UTF_8)
-    var userIDJson = File("$pathProject/src/test/kotlin/resources/userID.json")
+    private var cadastroJson = File("$pathProject/src/test/kotlin/resources/userData.json").readText(Charsets.UTF_8)
+    private var userIDJson = File("$pathProject/src/test/kotlin/resources/userID.json")
 
     // passa os dados de json para objetos para o kotlin ler.
-    val cadastroDadosBody = Gson().fromJson(cadastroJson, UserData::class.java)
+    private val cadastroDadosBody: UserData = Gson().fromJson(cadastroJson, UserData::class.java)
     // usando o Faker para gerar dados aleatorios.
-    var faker = Faker()
+    private var faker = Faker()
 
     // pre-requisito global para os testes serem executados
     fun requestSpecification(): RequestSpecification {
@@ -71,29 +70,9 @@ class CadastroBasicoTest {
      */
 
     @Test
-    @Order(0)
-    fun ListarUsuariosCadastrados(){
-        step("Realizando os testes de cadastro")
-        cadastroDadosBody.email = faker.internet().emailAddress()
-        cadastroDadosBody.nome = faker.name().fullName()
-        val dados: String =
-            Given {
-                spec(requestSpecification()); body(cadastroDadosBody)
-            } When {
-                get("/usuarios")
-            } Then {
-                assertThat().statusCode(200)
-            } Extract {
-                response().body().asString()
-            }
-        step("Response:/n $dados")
-    }
-
-
-    @Test
     @Order(1)
     fun cadastroDeUsuarioTest(){
-        step("Realizando os testes de cadastro")
+        description("CT01 - Validar o cadastro realizado com sucesso - Teste Positivo")
         cadastroDadosBody.email = faker.internet().emailAddress()
         cadastroDadosBody.nome = faker.name().fullName()
         val id: String =
@@ -116,7 +95,7 @@ class CadastroBasicoTest {
     @Test
     @Order(2)
     fun cadastroDeUsuarioMessageEmailTest(){
-        step("Realizando os testes de cadastro")
+        description("CT02 - Validar mensagem de email já cadastrado - Teste Negativo")
         val  response: Response =
             Given {
                 spec(requestSpecification())
@@ -134,5 +113,37 @@ class CadastroBasicoTest {
         val message = response.path("message") as String
         step("message: $message"); step("response: ${response.print()}")
     }
-
+    @Test
+    @Order(3)
+    fun listar_novo_usuario_cadastrados(){
+        description("CT03 - Realizar a listagem de usuários cadastros - Teste Positivo")
+        cadastroDadosBody.email = faker.internet().emailAddress()
+        cadastroDadosBody.nome = faker.name().fullName()
+        val responseBody: String =
+            Given {
+                spec(requestSpecification()); body(cadastroDadosBody)
+            } When {
+                post("/usuarios")
+            } Then {
+                assertThat().statusCode(201); status().is2xxSuccessful
+            } Extract {
+                response().body().asString()
+            }
+        val jsonObject = JSONObject(responseBody)
+        val dados: String =
+            Given {
+                spec(requestSpecification()); body(cadastroDadosBody)
+            } When {
+                get("/usuarios")
+            } Then {
+                assertThat().statusCode(200)
+                assertThat().body(containsString("\"_id\": \"${jsonObject.getString("_id")}\""))
+                assertThat().body(containsString("\"email\": \"${cadastroDadosBody.email}\""))
+                assertThat().body(containsString("\"nome\": \"${cadastroDadosBody.nome}\""))
+                assertThat().body(containsString("\"administrador\": \"${cadastroDadosBody.administrador}\""))
+            } Extract {
+                response().body().asString()
+            }
+        step("Response:/n $dados")
+    }
 }
