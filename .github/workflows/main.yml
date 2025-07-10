@@ -28,15 +28,8 @@ jobs:
       with:
         distribution: 'zulu' # See 'Supported distributions' for available options
         java-version: '11'
-        cache: 'maven'
     - name: Run tests
-      run: mvnw clean test
-    - name: Cache Maven packages
-      uses: actions/cache@v4
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-        restore-keys: ${{ runner.os }}-m2
+      run: mvn clean test --file pom.xml
 
     - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
       run: |
