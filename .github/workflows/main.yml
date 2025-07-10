@@ -29,7 +29,6 @@ jobs:
         distribution: 'zulu' # See 'Supported distributions' for available options
         java-version: '11'
         cache: 'maven'
-        cache-dependency-path: 'pom.xml' # optional
     - name: Run tests
       run: mvnw clean test
     - name: Cache Maven packages
