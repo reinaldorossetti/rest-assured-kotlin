@@ -130,8 +130,8 @@ class CadastroBasicoTest : Setup() {
             assertThat().statusCode(201); status().is2xxSuccessful
             body(matchesJsonSchema(schema))
         } Extract {
-            response().body().asString()
+            response().statusCode().toString()
         }
-        step("Response:/n $dados")
+        step("Status Code:/n $dados")
     }
 }
