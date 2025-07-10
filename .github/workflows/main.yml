@@ -30,7 +30,6 @@ jobs:
         java-version: '11'
         cache: 'maven'
         cache-dependency-path: './pom.xml' # optional
-      working-directory: ${{github.workspace}}
     - name: Run tests
       run: mvn clean test
       working-directory: ${{github.workspace}}
