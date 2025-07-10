@@ -106,9 +106,9 @@ class CadastroBasicoTest : Setup() {
                 assertThat().body(containsString("\"nome\": \"${cadastroDadosBody.nome}\""))
                 assertThat().body(containsString("\"administrador\": \"${cadastroDadosBody.administrador}\""))
             } Extract {
-                response().body().asString()
+                response().statusCode().toString()
             }
-        step("Response:/n $dados")
+        tep("Status Code:/n $dados")
     }
 
     @Test
