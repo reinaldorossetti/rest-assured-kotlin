@@ -22,7 +22,11 @@ open class Setup {
     // pre-requisito global para os testes serem executados
     fun requestSpecification(): RequestSpecification {
         RestAssuredMockMvc.config = RestAssuredMockMvc.config().asyncConfig(withTimeout(20, TimeUnit.SECONDS))
-        val url = YamlConfig.getBaseUrl()
+
+        var url: String? = System.getProperty("url")
+        if (url.isNullOrBlank()) {
+            url = YamlConfig.getBaseUrl()
+        }
         return RequestSpecBuilder()
             .setBaseUri(url)
             .addHeader("Accept", "application/json")

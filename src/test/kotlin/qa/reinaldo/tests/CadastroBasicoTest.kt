@@ -122,13 +122,16 @@ class CadastroBasicoTest : Setup() {
         // Lê o arquivo do schema como string
         val schema = String(Files.readAllBytes(Paths.get("src/test/kotlin/resources/cadasdro_schema.json")))
 
-        Given {
+        val dados: String = Given {
             spec(requestSpecification()); body(cadastroDadosBody)
         } When {
             post("/usuarios")
         } Then {
             assertThat().statusCode(201); status().is2xxSuccessful
             body(matchesJsonSchema(schema))
+        } Extract {
+            response().body().asString()
         }
+        step("Response:/n $dados")
     }
 }

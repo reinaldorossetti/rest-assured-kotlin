@@ -33,7 +33,7 @@ jobs:
         cache: 'maven'
 #        cache-dependency-path: 'pom.xml' # optional
     - name: Run tests
-      run: mvn clean test
+      run: mvn clean test -Durl=https://serverest.dev
 
     - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
       run: |
