@@ -3,6 +3,8 @@ package qa.reinaldo.tests
 import com.github.javafaker.Faker
 import com.google.gson.Gson
 import io.qameta.allure.Allure.*
+import io.qameta.allure.Severity
+import io.qameta.allure.SeverityLevel
 import io.restassured.RestAssured.*
 import io.restassured.module.jsv.JsonSchemaValidator.*
 import io.restassured.module.kotlin.extensions.*
@@ -30,6 +32,7 @@ class CadastroBasicoTest : Setup() {
 
     @Test
     @Order(1)
+    @Severity(SeverityLevel.CRITICAL)
     fun cadastroDeUsuarioTest(){
         description("CT01 - Validar o cadastro realizado com sucesso - Teste Positivo")
         cadastroDadosBody.email = faker.internet().emailAddress()
@@ -53,6 +56,7 @@ class CadastroBasicoTest : Setup() {
 
     @Test
     @Order(2)
+    @Severity(SeverityLevel.NORMAL)
     fun cadastroDeUsuarioMessageEmailTest(){
         description("CT02 - Validar mensagem de email já cadastrado - Teste Negativo")
         val  response: Response =
@@ -74,6 +78,7 @@ class CadastroBasicoTest : Setup() {
     }
     @Test
     @Order(3)
+    @Severity(SeverityLevel.NORMAL)
     fun listar_novo_usuario_cadastrado(){
         description("CT03 - Realizar a listagem de usuários cadastros - Teste Positivo")
         cadastroDadosBody.email = faker.internet().emailAddress()
@@ -108,6 +113,7 @@ class CadastroBasicoTest : Setup() {
 
     @Test
     @Order(4)
+    @Severity(SeverityLevel.MINOR)
     fun validar_json_schema_do_cadastrado(){
         description("CT03 - Realizar a listagem de usuários cadastros - Teste Positivo")
         cadastroDadosBody.email = faker.internet().emailAddress()
