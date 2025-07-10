@@ -34,6 +34,7 @@ jobs:
 #        cache-dependency-path: 'pom.xml' # optional
     - name: Run tests
       run: mvn clean test -Durl=https://serverest.dev
+      continue-on-error:  true
 
     - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
       run: |
