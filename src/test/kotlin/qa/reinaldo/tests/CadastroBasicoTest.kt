@@ -108,7 +108,7 @@ class CadastroBasicoTest : Setup() {
             } Extract {
                 response().statusCode().toString()
             }
-        tep("Status Code:/n $dados")
+        step("Status Code:/n $dados")
     }
 
     @Test
