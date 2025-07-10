@@ -32,7 +32,6 @@ jobs:
 #        cache-dependency-path: 'pom.xml' # optional
     - name: Run tests
       run: mvn clean test
-      working-directory: ${{github.workspace}}
 
     - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
       run: |
