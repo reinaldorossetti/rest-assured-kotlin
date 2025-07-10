@@ -29,7 +29,7 @@ jobs:
         distribution: 'zulu' # See 'Supported distributions' for available options
         java-version: '11'
         cache: 'maven'
-        cache-dependency-path: '${{github.workspace}}/pom.xml' # optional
+        cache-dependency-path: 'pom.xml' # optional
     - name: Run tests
       run: mvn clean test
       working-directory: ${{github.workspace}}
