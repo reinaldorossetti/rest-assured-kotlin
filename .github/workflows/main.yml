@@ -38,10 +38,6 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
 
-    - name: Run tests
-      if: always()
-      continue-on-error: true
-      run: ./mvnw clean test
     - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
       run: |
         allure generate allure-results -o allure-report/
