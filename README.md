@@ -54,8 +54,24 @@ No seu `pom.xml`:
 ```xml
 <dependency>
     <groupId>io.rest-assured</groupId>
+    <artifactId>xml-path</artifactId>
+    <version>5.4.0</version>
+</dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>spring-mock-mvc</artifactId>
+    <version>5.4.0</version>
+</dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>5.4.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
     <artifactId>kotlin-extensions</artifactId>
-    <version>4.4.0</version>
+    <version>5.4.0</version>
     <scope>test</scope>
 </dependency>
 ```
