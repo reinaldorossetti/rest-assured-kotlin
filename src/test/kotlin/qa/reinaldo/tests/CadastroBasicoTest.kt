@@ -23,8 +23,6 @@ import java.nio.file.Paths;
 class CadastroBasicoTest : Setup() {
 
 
-    // ler o arquivo json
-    private var cadastroJson = File("$pathProject/src/test/kotlin/resources/userData.json").readText(Charsets.UTF_8)
     // passa os dados de json para objetos para o kotlin ler.
     private val cadastroDadosBody: UserData = Gson().fromJson(cadastroJson, UserData::class.java)
     // usando o Faker para gerar dados aleatorios.
@@ -74,7 +72,7 @@ class CadastroBasicoTest : Setup() {
                 response()
             }
         val message = response.path("message") as String
-        step("message: $message"); step("response: ${response.print()}")
+        step("message: $message");
     }
     @Test
     @Order(3)

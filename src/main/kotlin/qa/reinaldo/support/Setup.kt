@@ -18,6 +18,8 @@ open class Setup {
     // pega o caminho do projeto
     val pathProject: String = System.getProperty("user.dir")
     private var userIDJson = File("$pathProject/src/test/kotlin/resources/userID.json")
+    // ler o arquivo json
+    var cadastroJson = File("$pathProject/src/test/kotlin/resources/userData.json").readText(Charsets.UTF_8)
 
     // pre-requisito global para os testes serem executados
     fun requestSpecification(): RequestSpecification {
